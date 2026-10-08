@@ -1,0 +1,28 @@
+name: Release directory
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: release
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - name: Validate release content
+        run: python3 scripts/check.py
+      - name: Check search JavaScript syntax
+        run: node --check site-assets/search.js
+      - name: Create annotated tag and publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/release.py
