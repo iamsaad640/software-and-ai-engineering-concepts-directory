@@ -16,10 +16,14 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+      - name: Install documentation dependencies
+        run: |
+          python3 -m venv .venv
+          .venv/bin/python -m pip install -r requirements-docs.txt
       - name: Validate and build documentation
-        run: python3 scripts/check.py
+        run: .venv/bin/python scripts/check.py
       - name: Check search JavaScript syntax
-        run: node --check site-assets/search.js
+        run: node --check site-assets/shortcuts.js
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: _site

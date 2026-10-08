@@ -40,7 +40,7 @@ if not re.fullmatch(r'0|[1-9]\d*',version.split('.')[0]) or not re.fullmatch(r'\
 if f'## [{version}]' not in (ROOT/'CHANGELOG.md').read_text():
     fail('VERSION must have a matching changelog section')
 for file in ROOT.rglob('*.md'):
-    if '.git' in file.parts or '_site' in file.parts:
+    if any(part in {'.git','_site','_docs','.venv'} for part in file.relative_to(ROOT).parts):
         continue
     text=file.read_text()
     if not text.endswith('\n'):
@@ -64,14 +64,32 @@ class SiteParser(HTMLParser):
         if 'id' in attrs: self.ids.append(attrs['id'])
         if 'href' in attrs: self.hrefs.append(attrs['href'])
         if 'src' in attrs: self.assets.append(attrs['src'])
-parser=SiteParser(); parser.feed((ROOT/'_site/index.html').read_text())
-if len(parser.ids)!=len(set(parser.ids)):
-    fail('Duplicate site IDs')
-for href in parser.hrefs+parser.assets:
-    if href.startswith('#'):
-        if href[1:] not in parser.ids: fail('Broken site anchor: '+href)
-    elif not href.startswith('https://') and not (ROOT/'_site'/href).exists():
-        fail('Broken site asset: '+href)
+from urllib.parse import urlsplit, unquote
+cache={}
+def parsed(path):
+    if path not in cache:
+        parser=SiteParser(); parser.feed(path.read_text()); cache[path]=parser
+    return cache[path]
+for page in (ROOT/'_site').rglob('*.html'):
+    parser=parsed(page)
+    if len(parser.ids)!=len(set(parser.ids)):
+        fail('Duplicate site IDs: '+str(page.relative_to(ROOT/'_site')))
+    for href in parser.hrefs+parser.assets:
+        parts=urlsplit(href)
+        if parts.scheme or parts.netloc:
+            continue
+        target=(ROOT/'_site'/unquote(parts.path.lstrip('/'))) if parts.path.startswith('/') else (page.parent/unquote(parts.path))
+        if not parts.path:
+            target=page
+        if target.is_dir():
+            target=target/'index.html'
+        if not target.exists():
+            fail('Broken site link: '+str(page.relative_to(ROOT/'_site'))+' -> '+href)
+        elif parts.fragment and target.suffix=='.html' and unquote(parts.fragment) not in parsed(target).ids:
+            fail('Broken site anchor: '+str(page.relative_to(ROOT/'_site'))+' -> '+href)
+for asset in ['llms.txt','sitemap.xml','robots.txt','catalog.json','concepts.txt']:
+    if not (ROOT/'_site'/asset).exists():
+        fail('Missing public export: '+asset)
 if errors:
     raise SystemExit('\n'.join(errors))
 unique=len({t.casefold() for s in data for e in s['entries'] for t in e['terms']})

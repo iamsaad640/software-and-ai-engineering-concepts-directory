@@ -30,9 +30,13 @@ Before 1.0, minor versions add categories or substantial scope; patches correct 
 
 The repository was private at initial setup. Private-repository Pages availability depends on the account plan. In repository **Settings → Pages**, choose **GitHub Actions** as the source. If GitHub does not permit Pages for the current plan, the maintainer must choose an eligible plan or intentionally make the repository public. Do not change visibility automatically.
 
-The Pages workflow deploys only validated `main` content and can also be rerun manually. It uses the standard `github-pages` environment, read-only contents permissions, Pages write permission, and OIDC for deployment. It does not deploy pull request code with privileged credentials.
+The Material for MkDocs site uses dependencies pinned in `requirements-docs.txt`. The Pages workflow deploys only validated `main` content and can also be rerun manually. It uses the standard `github-pages` environment, read-only contents permissions, Pages write permission, and OIDC for deployment. It does not deploy pull request code with privileged credentials.
 
-The intended public URL is `https://iamsaad640.github.io/software-and-ai-engineering-concepts-directory/`. A generated artifact or successful release does not by itself prove this URL is live.
+The public URL is `https://concepts.saad.run/`. Keep Pages Source set to **GitHub Actions**: branch-based publishing can overwrite the generated site with a rendering of the repository README.
+
+## Merged branch cleanup
+
+After updates to `main`, the cleanup workflow removes branches whose current head exactly matches the head of a merged pull request. It preserves the default branch, protected branches, branches with open pull requests, and branches with new commits after a merge. Cleanup decisions are checked again immediately before deletion.
 
 ## Validation boundaries
 

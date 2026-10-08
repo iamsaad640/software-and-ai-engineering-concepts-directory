@@ -2,6 +2,20 @@
 
 Notable directory changes are recorded here. Version numbers follow semantic versioning as documented in [the maintenance guide](docs/maintaining.md).
 
+## [0.2.0] — 2026-10-08
+
+### Added
+
+- Plain-text and JSON concept downloads with explicit filenames.
+- Public Markdown pages and an llms.txt index crediting Saad Ahmed.
+- Material for MkDocs theme with indexed search, Ctrl+K / Cmd+K, mobile navigation, light/dark mode, and page permalinks.
+- Individual topic pages, sitemap, crawl settings, and sharing metadata.
+- Safe cleanup of merged branches after updates to main.
+
+### Changed
+
+- Linked the live concepts.saad.run directory from the README.
+
 ## [0.1.2] — 2026-10-08
 
 ### Added

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate names-only Markdown and static documentation using Python's standard library."""
+"""Generate names-only Markdown and build Material for MkDocs documentation."""
 import argparse
 from collections import defaultdict
 from html import escape
@@ -7,6 +7,8 @@ import json
 import re
 from pathlib import Path
 import shutil
+import subprocess
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 TRACKS = {'software': 'Software engineering', 'ai': 'LLM applications', 'principal': 'Architecture and technical leadership'}
@@ -62,37 +64,79 @@ def markdown_files(data):
         raise ValueError('README must have exactly one directory block')
     block = '<!-- directory:start -->\n\n' + '\n'.join(overview) + '<!-- directory:end -->'
     result['README.md'] = re.sub(pattern, lambda match: block, readme, flags=re.S)
+    llms = ['# Software & AI Engineering Concepts', '', '> A directory of software systems, LLM application engineering, and technical leadership concepts.', '',
+            'Author and maintainer: Saad Ahmed (https://github.com/iamsaad640).',
+            'This release lists concept names and reference links. Use the topic pages to locate terminology; they are not full tutorials.', '',
+            '## Directory', '', '- [All topics](https://concepts.saad.run/docs/README.md)', '- [Alphabetical index](https://concepts.saad.run/docs/glossary.md)', '']
+    for track, title in TRACKS.items():
+        llms += [f'## {title}', '']
+        llms += [f"- [{section['title']}](https://concepts.saad.run/docs/{track}/{section['slug']}.md)" for section in data if section['track'] == track]
+        llms += ['']
+    result['llms.txt'] = '\n'.join(llms)
     return result
 
 def build_site(data):
+    import yaml
+    staging = ROOT / '_docs'
     out = ROOT / '_site'
-    out.mkdir(exist_ok=True)
-    sections, nav = [], []
-    for track,title in TRACKS.items():
-        nav += [f'<h2>{escape(title)}</h2><ul>']
-        for section in [s for s in data if s['track'] == track]:
-            ident=f"{track}-{section['slug']}"
-            nav += [f'<li><a href="#{ident}">{escape(section["title"])}</a></li>']
-            items=''.join(f'<li class="term">{escape(term)}</li>' for term in terms(section))
-            sections += [f'<section class="category" id="{ident}" data-track="{track}"><p class="eyebrow">{escape(title)}</p><h2>{escape(section["title"])}</h2><ul class="terms">{items}</ul></section>']
-        nav += ['</ul>']
-    unique=len({t.casefold() for s in data for t in terms(s)})
-    version=(ROOT/'VERSION').read_text().strip()
-    document='''<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Find concepts for databases, distributed systems, architecture, RAG, prompts, and agents.">
-<title>Software &amp; AI Engineering Concepts</title><link rel="stylesheet" href="assets/style.css"><script defer src="assets/search.js"></script></head>
-<body><a class="skip" href="#main">Skip to concepts</a><header><a class="brand" href="./">Engineering concepts</a><a href="https://github.com/iamsaad640/software-and-ai-engineering-concepts-directory">GitHub</a></header>
-<div class="layout"><nav aria-label="Categories">NAV</nav><main id="main"><p class="eyebrow">Software systems · LLM applications</p><h1>Software &amp; AI<br>Engineering Concepts</h1>
-<p class="intro">Find what to study next. Browse software systems, LLM applications, and architecture—or search for a specific concept.</p><p class="meta">COUNT distinct terms · CATEGORIES categories · vVERSION</p>
-<div class="search"><label for="search">Find a concept</label><input id="search" type="search" placeholder="Redis, sliding window, context engineering…" autocomplete="off"><label for="track">Topic</label><select id="track"><option value="all">All topics</option><option value="software">Software engineering</option><option value="ai">LLM applications</option><option value="principal">Architecture and leadership</option></select><button id="reset" type="button">Clear filters</button></div>
-<p id="status" role="status" aria-live="polite"></p><p id="empty" hidden>No matching concepts. Try another term or clear the filters.</p>
-CONTENT<footer><a href="catalog.json">Download concept list</a> · <a href="https://github.com/iamsaad640/software-and-ai-engineering-concepts-directory/blob/main/CONTRIBUTING.md">Contribute</a></footer></main></div></body></html>'''
-    document=document.replace('NAV',''.join(nav)).replace('CONTENT',''.join(sections)).replace('COUNT',f'{unique:,}').replace('CATEGORIES',str(len(data))).replace('VERSION',version)
-    (out/'index.html').write_text(document)
-    (out/'catalog.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+    if staging.exists():
+        shutil.rmtree(staging)
+    staging.mkdir()
+    for section in data:
+        relative = f"{section['track']}/{section['slug']}.md"
+        content = (ROOT/'docs'/relative).read_text().replace('[Directory](../README.md)', '[All topics](../topics.md)')
+        destination = staging / relative
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_text(content)
+    topics = (ROOT/'docs/README.md').read_text().replace('[Repository home](../README.md)', '[Home](index.md)')
+    (staging/'topics.md').write_text(topics)
+    glossary = (ROOT/'docs/glossary.md').read_text().replace('[Directory](README.md)', '[All topics](topics.md)').replace('[Repository home](../README.md)', '[Home](index.md)')
+    (staging/'glossary.md').write_text(glossary)
+    unique = len({term.casefold() for section in data for term in terms(section)})
+    (staging/'index.md').write_text(f'''# Software & AI Engineering Concepts
+
+Find the concepts behind reliable software and LLM applications.
+
+Browse {len(data)} topics, search for a term, or use the directory to plan what to study next. The current edition lists concept names and reference links.
+
+[Browse all topics](topics.md){{ .md-button .md-button--primary }}
+[Find a term A–Z](glossary.md){{ .md-button }}
+
+## Pick a starting point
+
+- **Software systems:** [rate limiting](software/rate-limiting.md), [transactions](software/transactions.md), [distributed systems](software/distributed-systems.md), and [Redis](software/distributed-key-value-stores.md).
+- **LLM applications:** [context engineering](ai/context-engineering.md), [RAG](ai/rag-and-retrieval.md), [agent loops](ai/loop-engineering.md), and [evaluations](ai/evaluation.md).
+- **Architecture and leadership:** [technical strategy](principal/technical-strategy.md) and [engineering across teams](principal/organizational-engineering.md).
+
+## Take the list with you
+
+<a class="md-button" href="concepts.txt" download="engineering-concepts.txt">Download list (.txt)</a>
+<a class="md-button" href="catalog.json" download="engineering-concepts.json">Download JSON</a>
+
+{unique:,} distinct terms. Press **Ctrl+K** or **Cmd+K** to search.
+
+Created and maintained by [Saad Ahmed](https://github.com/iamsaad640). [Suggest a concept](https://github.com/iamsaad640/software-and-ai-engineering-concepts-directory/issues/new/choose) or [contribute on GitHub](https://github.com/iamsaad640/software-and-ai-engineering-concepts-directory/blob/main/CONTRIBUTING.md).
+''')
+    shutil.copytree(ROOT/'site-assets', staging/'assets', dirs_exist_ok=True)
+    config = yaml.safe_load((ROOT/'mkdocs.yml').read_text())
+    config['nav'] = [{'Home': 'index.md'}, {'All topics': 'topics.md'}]
+    for track, title in TRACKS.items():
+        config['nav'].append({title: [{section['title']: f"{track}/{section['slug']}.md"} for section in data if section['track'] == track]})
+    config['nav'].append({'A–Z index': 'glossary.md'})
+    generated_config = ROOT/'_mkdocs.yml'
+    generated_config.write_text(yaml.safe_dump(config, sort_keys=False, allow_unicode=True))
+    subprocess.run([sys.executable, '-m', 'mkdocs', 'build', '--strict', '--config-file', str(generated_config)], cwd=ROOT, check=True)
+    (out/'catalog.json').write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n')
+    text_lines = ['Software & AI Engineering Concepts', 'Author: Saad Ahmed', 'https://concepts.saad.run/', '']
+    for section in data:
+        text_lines += [section['title'], *('- '+term for term in terms(section)), '']
+    (out/'concepts.txt').write_text('\n'.join(text_lines)+'\n')
+    shutil.copytree(ROOT/'docs', out/'docs', dirs_exist_ok=True)
+    shutil.copy2(ROOT/'README.md', out/'README.md')
+    shutil.copy2(ROOT/'llms.txt', out/'llms.txt')
+    (out/'CNAME').write_text('concepts.saad.run\n')
     (out/'.nojekyll').touch()
-    shutil.copytree(ROOT/'site-assets',out/'assets',dirs_exist_ok=True)
+    (out/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: https://concepts.saad.run/sitemap.xml\n')
 
 if __name__ == '__main__':
     parser=argparse.ArgumentParser()
