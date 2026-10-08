@@ -11,7 +11,8 @@ use_directory_urls: true
 copyright: Created and maintained by <a href="https://github.com/iamsaad640">Saad Ahmed</a> · MIT license
 theme:
   name: material
-  logo: assets/brand/logo.png
+  icon:
+    logo: material/book-open-page-variant
   favicon: assets/brand/favicon.ico
   custom_dir: overrides
   font: false
