@@ -2,6 +2,13 @@
 
 Notable directory changes are recorded here. Version numbers follow semantic versioning as documented in [the maintenance guide](docs/maintaining.md).
 
+## [0.2.1] — 2026-10-08
+
+### Added
+
+- Custom book-and-code brand mark, multi-size favicon, and Apple touch icon.
+- Social sharing image with the directory title, domain, and Saad Ahmed attribution.
+
 ## [0.2.0] — 2026-10-08
 
 ### Added
