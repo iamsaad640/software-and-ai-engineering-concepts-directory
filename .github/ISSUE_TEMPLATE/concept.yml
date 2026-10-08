@@ -1,0 +1,28 @@
+name: Suggest a concept
+about: Add or reorganize a software or applied LLM engineering concept.
+title: "Concept: "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Concept name
+      description: Use established terminology or identify an emerging term.
+    validations:
+      required: true
+  - type: dropdown
+    id: track
+    attributes:
+      label: Track
+      options:
+        - Software engineering
+        - Applied LLM engineering
+        - Principal engineering
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Proposed category and rationale
+      description: Explain the gap and provide an authoritative reference where possible.
+    validations:
+      required: true

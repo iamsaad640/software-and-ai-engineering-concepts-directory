@@ -1,0 +1,4090 @@
+[
+  {
+    "track": "software",
+    "slug": "algorithms",
+    "title": "Algorithms and data structures",
+    "entries": [
+      {
+        "terms": [
+          "Big O",
+          "Big Theta",
+          "Big Omega",
+          "amortized analysis"
+        ]
+      },
+      {
+        "terms": [
+          "Arrays",
+          "linked lists",
+          "stacks",
+          "queues",
+          "deques",
+          "ring buffers"
+        ]
+      },
+      {
+        "terms": [
+          "Hash maps",
+          "hash sets",
+          "collision resolution",
+          "load factor"
+        ]
+      },
+      {
+        "terms": [
+          "Heaps",
+          "priority queues",
+          "balanced search trees",
+          "tries"
+        ]
+      },
+      {
+        "terms": [
+          "B-trees",
+          "B+ trees",
+          "LSM trees",
+          "skip lists"
+        ]
+      },
+      {
+        "terms": [
+          "Binary search",
+          "two pointers",
+          "sliding window",
+          "prefix sums",
+          "difference arrays"
+        ]
+      },
+      {
+        "terms": [
+          "Recursion",
+          "backtracking",
+          "divide and conquer",
+          "greedy algorithms",
+          "dynamic programming"
+        ]
+      },
+      {
+        "terms": [
+          "BFS",
+          "DFS",
+          "topological sorting",
+          "cycle detection",
+          "strongly connected components"
+        ]
+      },
+      {
+        "terms": [
+          "Shortest paths",
+          "minimum spanning trees",
+          "union-find"
+        ]
+      },
+      {
+        "terms": [
+          "Segment trees",
+          "Fenwick trees",
+          "interval trees"
+        ]
+      },
+      {
+        "terms": [
+          "Bloom filters",
+          "Count-Min Sketch",
+          "HyperLogLog",
+          "reservoir sampling"
+        ]
+      },
+      {
+        "terms": [
+          "Consistent hashing",
+          "rendezvous hashing",
+          "sorting stability"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Open Data Structures",
+        "https://opendatastructures.org/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "languages-and-runtimes",
+    "title": "Languages and runtimes",
+    "entries": [
+      {
+        "terms": [
+          "Static typing",
+          "dynamic typing",
+          "structural typing",
+          "nominal typing"
+        ]
+      },
+      {
+        "terms": [
+          "Generics",
+          "variance",
+          "subtyping",
+          "type inference"
+        ]
+      },
+      {
+        "terms": [
+          "Algebraic data types",
+          "discriminated unions",
+          "exhaustive matching",
+          "nullable types"
+        ]
+      },
+      {
+        "terms": [
+          "Value semantics",
+          "reference semantics",
+          "aliasing",
+          "immutability"
+        ]
+      },
+      {
+        "terms": [
+          "Closures",
+          "lexical scope",
+          "ownership",
+          "borrowing",
+          "lifetimes"
+        ]
+      },
+      {
+        "terms": [
+          "Compilation",
+          "interpretation",
+          "bytecode",
+          "JIT",
+          "AOT",
+          "deoptimization"
+        ]
+      },
+      {
+        "terms": [
+          "Stack allocation",
+          "heap allocation",
+          "garbage collection",
+          "reference counting"
+        ]
+      },
+      {
+        "terms": [
+          "Memory leaks",
+          "object pooling",
+          "resource cleanup",
+          "deterministic destruction"
+        ]
+      },
+      {
+        "terms": [
+          "Exceptions",
+          "error values",
+          "typed errors",
+          "exception boundaries"
+        ]
+      },
+      {
+        "terms": [
+          "ABI",
+          "FFI",
+          "reflection",
+          "metaprogramming",
+          "undefined behavior"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Linux manual pages",
+        "https://man7.org/linux/man-pages/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "operating-systems",
+    "title": "Operating systems and hardware",
+    "entries": [
+      {
+        "terms": [
+          "Processes",
+          "threads",
+          "scheduling",
+          "context switches",
+          "CPU affinity"
+        ]
+      },
+      {
+        "terms": [
+          "System calls",
+          "interrupts",
+          "signals",
+          "interprocess communication"
+        ]
+      },
+      {
+        "terms": [
+          "Virtual memory",
+          "page tables",
+          "page faults",
+          "mmap",
+          "swapping"
+        ]
+      },
+      {
+        "terms": [
+          "File descriptors",
+          "sockets",
+          "pipes",
+          "shared memory"
+        ]
+      },
+      {
+        "terms": [
+          "Blocking I/O",
+          "nonblocking I/O",
+          "asynchronous I/O",
+          "epoll",
+          "kqueue"
+        ]
+      },
+      {
+        "terms": [
+          "CPU caches",
+          "cache lines",
+          "locality",
+          "cache coherence",
+          "false sharing"
+        ]
+      },
+      {
+        "terms": [
+          "NUMA",
+          "SIMD",
+          "vectorization"
+        ]
+      },
+      {
+        "terms": [
+          "Filesystems",
+          "journaling",
+          "buffering",
+          "fsync",
+          "atomic rename"
+        ]
+      },
+      {
+        "terms": [
+          "Namespaces",
+          "cgroups",
+          "resource limits",
+          "OOM termination"
+        ]
+      },
+      {
+        "terms": [
+          "Wall clocks",
+          "monotonic clocks",
+          "clock drift",
+          "clock precision"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Linux manual pages",
+        "https://man7.org/linux/man-pages/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "concurrency",
+    "title": "Concurrency and parallelism",
+    "entries": [
+      {
+        "terms": [
+          "Concurrency",
+          "parallelism",
+          "CPU-bound work",
+          "I/O-bound work"
+        ]
+      },
+      {
+        "terms": [
+          "Threads",
+          "processes",
+          "coroutines",
+          "futures",
+          "promises",
+          "event loops"
+        ]
+      },
+      {
+        "terms": [
+          "Race conditions",
+          "data races",
+          "atomicity",
+          "visibility",
+          "ordering"
+        ]
+      },
+      {
+        "terms": [
+          "Mutexes",
+          "semaphores",
+          "condition variables",
+          "read-write locks",
+          "barriers"
+        ]
+      },
+      {
+        "terms": [
+          "Deadlock",
+          "livelock",
+          "starvation",
+          "priority inversion"
+        ]
+      },
+      {
+        "terms": [
+          "Compare-and-swap",
+          "memory barriers",
+          "happens-before"
+        ]
+      },
+      {
+        "terms": [
+          "Lock-free",
+          "wait-free",
+          "ABA problem"
+        ]
+      },
+      {
+        "terms": [
+          "Thread pools",
+          "bounded queues",
+          "work stealing",
+          "executor saturation"
+        ]
+      },
+      {
+        "terms": [
+          "Structured concurrency",
+          "cancellation propagation",
+          "task supervision"
+        ]
+      },
+      {
+        "terms": [
+          "Actor model",
+          "channels",
+          "message passing",
+          "backpressure"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Linux manual pages",
+        "https://man7.org/linux/man-pages/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "networking",
+    "title": "Networking and protocols",
+    "entries": [
+      {
+        "terms": [
+          "IP",
+          "TCP",
+          "UDP",
+          "QUIC"
+        ]
+      },
+      {
+        "terms": [
+          "TCP handshake",
+          "retransmission",
+          "congestion control",
+          "flow control",
+          "keepalive"
+        ]
+      },
+      {
+        "terms": [
+          "DNS",
+          "recursive resolution",
+          "TTL",
+          "negative caching"
+        ]
+      },
+      {
+        "terms": [
+          "TLS",
+          "certificate chains",
+          "hostname verification",
+          "mutual TLS"
+        ]
+      },
+      {
+        "terms": [
+          "HTTP/1.1",
+          "HTTP/2",
+          "HTTP/3",
+          "head-of-line blocking"
+        ]
+      },
+      {
+        "terms": [
+          "Connection pooling",
+          "connection reuse",
+          "proxies",
+          "NAT",
+          "load balancing"
+        ]
+      },
+      {
+        "terms": [
+          "HTTP methods",
+          "status codes",
+          "headers",
+          "content negotiation",
+          "compression"
+        ]
+      },
+      {
+        "terms": [
+          "Cookies",
+          "sessions",
+          "CORS",
+          "same-origin policy"
+        ]
+      },
+      {
+        "terms": [
+          "WebSockets",
+          "SSE",
+          "polling",
+          "long polling"
+        ]
+      },
+      {
+        "terms": [
+          "Connection timeout",
+          "read timeout",
+          "idle timeout",
+          "deadlines",
+          "jitter"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "MDN Web Docs",
+        "https://developer.mozilla.org/en-US/docs/Web"
+      ],
+      [
+        "Linux manual pages",
+        "https://man7.org/linux/man-pages/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "code-design",
+    "title": "Code design and maintainability",
+    "entries": [
+      {
+        "terms": [
+          "Cohesion",
+          "coupling",
+          "encapsulation",
+          "information hiding"
+        ]
+      },
+      {
+        "terms": [
+          "SOLID",
+          "DRY",
+          "KISS",
+          "YAGNI",
+          "separation of concerns"
+        ]
+      },
+      {
+        "terms": [
+          "Dependency inversion",
+          "dependency injection",
+          "composition",
+          "inheritance"
+        ]
+      },
+      {
+        "terms": [
+          "Pure functions",
+          "side effects",
+          "referential transparency"
+        ]
+      },
+      {
+        "terms": [
+          "Design by contract",
+          "invariants",
+          "preconditions",
+          "postconditions"
+        ]
+      },
+      {
+        "terms": [
+          "Strategy",
+          "factory",
+          "builder",
+          "adapter",
+          "decorator",
+          "facade"
+        ]
+      },
+      {
+        "terms": [
+          "Observer",
+          "command",
+          "state pattern"
+        ]
+      },
+      {
+        "terms": [
+          "Code smells",
+          "refactoring",
+          "technical debt",
+          "complexity budgets"
+        ]
+      },
+      {
+        "terms": [
+          "Error taxonomy",
+          "domain errors",
+          "exception boundaries"
+        ]
+      },
+      {
+        "terms": [
+          "Public interfaces",
+          "dependency cycles",
+          "static analysis",
+          "code review"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Refactoring catalog",
+        "https://refactoring.com/catalog/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "architecture",
+    "title": "Architecture and domain modeling",
+    "entries": [
+      {
+        "terms": [
+          "Monolith",
+          "modular monolith",
+          "microservices",
+          "service-oriented architecture"
+        ]
+      },
+      {
+        "terms": [
+          "Layered architecture",
+          "hexagonal architecture",
+          "clean architecture"
+        ]
+      },
+      {
+        "terms": [
+          "Event-driven architecture",
+          "message-driven architecture",
+          "serverless"
+        ]
+      },
+      {
+        "terms": [
+          "Bounded contexts",
+          "ubiquitous language",
+          "context mapping"
+        ]
+      },
+      {
+        "terms": [
+          "Entities",
+          "value objects",
+          "aggregates",
+          "aggregate invariants"
+        ]
+      },
+      {
+        "terms": [
+          "Repositories",
+          "domain services",
+          "ports and adapters"
+        ]
+      },
+      {
+        "terms": [
+          "Domain events",
+          "integration events",
+          "anti-corruption layers"
+        ]
+      },
+      {
+        "terms": [
+          "CQRS",
+          "event sourcing",
+          "projections",
+          "snapshots",
+          "replay"
+        ]
+      },
+      {
+        "terms": [
+          "ADRs",
+          "RFCs",
+          "architecture fitness functions"
+        ]
+      },
+      {
+        "terms": [
+          "Strangler migration",
+          "branch by abstraction",
+          "evolutionary architecture"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Martin Fowler architecture articles",
+        "https://martinfowler.com/architecture/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "api-design",
+    "title": "APIs and integrations",
+    "entries": [
+      {
+        "terms": [
+          "REST",
+          "RPC",
+          "gRPC",
+          "GraphQL"
+        ]
+      },
+      {
+        "terms": [
+          "Resource modeling",
+          "schema validation",
+          "API contracts"
+        ]
+      },
+      {
+        "terms": [
+          "Safe methods",
+          "idempotency",
+          "idempotency keys",
+          "deduplication"
+        ]
+      },
+      {
+        "terms": [
+          "Offset pagination",
+          "cursor pagination",
+          "keyset pagination"
+        ]
+      },
+      {
+        "terms": [
+          "Filtering",
+          "sorting",
+          "partial updates",
+          "bulk operations"
+        ]
+      },
+      {
+        "terms": [
+          "Versioning",
+          "backward compatibility",
+          "deprecation",
+          "schema evolution"
+        ]
+      },
+      {
+        "terms": [
+          "OpenAPI",
+          "Protocol Buffers",
+          "serialization compatibility"
+        ]
+      },
+      {
+        "terms": [
+          "Authentication",
+          "authorization",
+          "API scopes"
+        ]
+      },
+      {
+        "terms": [
+          "Webhook signatures",
+          "replay protection",
+          "delivery retries"
+        ]
+      },
+      {
+        "terms": [
+          "Long-running operations",
+          "job handles",
+          "consumer-driven contracts"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "MDN Web Docs",
+        "https://developer.mozilla.org/en-US/docs/Web"
+      ],
+      [
+        "OpenAPI specification",
+        "https://spec.openapis.org/oas/latest.html"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "rate-limiting",
+    "title": "Rate limiting and admission control",
+    "entries": [
+      {
+        "terms": [
+          "Fixed-window counter",
+          "boundary bursts"
+        ]
+      },
+      {
+        "terms": [
+          "Sliding-window log"
+        ]
+      },
+      {
+        "terms": [
+          "Sliding-window counter",
+          "weighted-window approximation"
+        ]
+      },
+      {
+        "terms": [
+          "Token bucket",
+          "burst capacity",
+          "refill rate"
+        ]
+      },
+      {
+        "terms": [
+          "Leaky bucket",
+          "GCRA"
+        ]
+      },
+      {
+        "terms": [
+          "Per-IP limits",
+          "per-user limits",
+          "per-tenant limits",
+          "hierarchical quotas"
+        ]
+      },
+      {
+        "terms": [
+          "Weighted requests",
+          "concurrency limits",
+          "admission control"
+        ]
+      },
+      {
+        "terms": [
+          "Distributed counters",
+          "Redis Lua",
+          "atomic updates",
+          "quota leasing"
+        ]
+      },
+      {
+        "terms": [
+          "Clock skew",
+          "TTL",
+          "hot keys",
+          "fail-open",
+          "fail-closed"
+        ]
+      },
+      {
+        "terms": [
+          "HTTP 429",
+          "Retry-After",
+          "load shedding",
+          "adaptive concurrency"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Redis rate limiter pattern",
+        "https://redis.io/docs/latest/commands/incr/"
+      ],
+      [
+        "MDN Web Docs",
+        "https://developer.mozilla.org/en-US/docs/Web"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "caching",
+    "title": "Caching",
+    "entries": [
+      {
+        "terms": [
+          "Cache-aside",
+          "read-through",
+          "write-through",
+          "write-behind"
+        ]
+      },
+      {
+        "terms": [
+          "TTL",
+          "expiration",
+          "eviction",
+          "invalidation"
+        ]
+      },
+      {
+        "terms": [
+          "LRU",
+          "LFU",
+          "FIFO",
+          "admission policy"
+        ]
+      },
+      {
+        "terms": [
+          "Stale-while-revalidate",
+          "stale-if-error",
+          "negative caching"
+        ]
+      },
+      {
+        "terms": [
+          "Cache stampede",
+          "dogpile effect",
+          "single-flight",
+          "request coalescing"
+        ]
+      },
+      {
+        "terms": [
+          "TTL jitter",
+          "probabilistic early refresh"
+        ]
+      },
+      {
+        "terms": [
+          "Cache penetration",
+          "cache avalanche",
+          "hot keys"
+        ]
+      },
+      {
+        "terms": [
+          "Local cache",
+          "distributed cache",
+          "multilevel cache",
+          "coherence"
+        ]
+      },
+      {
+        "terms": [
+          "Versioned keys",
+          "tenant-aware keys",
+          "cache poisoning"
+        ]
+      },
+      {
+        "terms": [
+          "CDN",
+          "Vary",
+          "ETag",
+          "conditional requests",
+          "cache hit ratio"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "MDN Web Docs",
+        "https://developer.mozilla.org/en-US/docs/Web"
+      ],
+      [
+        "Redis documentation",
+        "https://redis.io/docs/latest/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "relational-databases",
+    "title": "Relational databases and SQL",
+    "entries": [
+      {
+        "terms": [
+          "Keys",
+          "constraints",
+          "referential integrity",
+          "functional dependencies"
+        ]
+      },
+      {
+        "terms": [
+          "Normalization",
+          "denormalization"
+        ]
+      },
+      {
+        "terms": [
+          "Joins",
+          "subqueries",
+          "CTEs",
+          "recursive queries",
+          "SQL window functions"
+        ]
+      },
+      {
+        "terms": [
+          "Composite indexes",
+          "covering indexes",
+          "partial indexes",
+          "expression indexes"
+        ]
+      },
+      {
+        "terms": [
+          "Selectivity",
+          "index column order",
+          "sargability"
+        ]
+      },
+      {
+        "terms": [
+          "Query planner",
+          "statistics",
+          "cardinality estimation",
+          "EXPLAIN"
+        ]
+      },
+      {
+        "terms": [
+          "Sequential scan",
+          "index scan",
+          "nested-loop join",
+          "hash join",
+          "merge join"
+        ]
+      },
+      {
+        "terms": [
+          "N+1 queries",
+          "batching",
+          "prepared statements",
+          "connection pooling"
+        ]
+      },
+      {
+        "terms": [
+          "Partitioning",
+          "materialized views",
+          "generated columns"
+        ]
+      },
+      {
+        "terms": [
+          "Vacuum",
+          "table bloat",
+          "index bloat",
+          "online migrations",
+          "backfills"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "PostgreSQL documentation",
+        "https://www.postgresql.org/docs/current/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "transactions",
+    "title": "Transactions and concurrency control",
+    "entries": [
+      {
+        "terms": [
+          "ACID",
+          "transaction boundaries",
+          "autocommit"
+        ]
+      },
+      {
+        "terms": [
+          "Read committed",
+          "repeatable read",
+          "serializable"
+        ]
+      },
+      {
+        "terms": [
+          "Dirty read",
+          "nonrepeatable read",
+          "phantom read"
+        ]
+      },
+      {
+        "terms": [
+          "Lost update",
+          "write skew",
+          "serialization anomaly"
+        ]
+      },
+      {
+        "terms": [
+          "MVCC",
+          "snapshot isolation",
+          "serializable snapshot isolation"
+        ]
+      },
+      {
+        "terms": [
+          "Optimistic concurrency",
+          "pessimistic concurrency",
+          "version columns"
+        ]
+      },
+      {
+        "terms": [
+          "Row locks",
+          "table locks",
+          "advisory locks",
+          "predicate locks"
+        ]
+      },
+      {
+        "terms": [
+          "Deadlock detection",
+          "lock ordering",
+          "lock timeout"
+        ]
+      },
+      {
+        "terms": [
+          "Compare-and-set",
+          "transaction retries",
+          "retry-safe operations"
+        ]
+      },
+      {
+        "terms": [
+          "WAL",
+          "crash recovery",
+          "two-phase locking",
+          "two-phase commit"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "PostgreSQL documentation",
+        "https://www.postgresql.org/docs/current/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "nonrelational-and-search",
+    "title": "Nonrelational databases and search",
+    "entries": [
+      {
+        "terms": [
+          "Key-value stores",
+          "document databases",
+          "wide-column stores",
+          "graph databases"
+        ]
+      },
+      {
+        "terms": [
+          "Time-series databases",
+          "object storage",
+          "blob storage"
+        ]
+      },
+      {
+        "terms": [
+          "Partition keys",
+          "sort keys",
+          "access-pattern-driven modeling"
+        ]
+      },
+      {
+        "terms": [
+          "Secondary indexes",
+          "sparse indexes",
+          "global indexes",
+          "local indexes"
+        ]
+      },
+      {
+        "terms": [
+          "Read amplification",
+          "write amplification",
+          "compaction",
+          "tombstones"
+        ]
+      },
+      {
+        "terms": [
+          "Inverted index",
+          "analyzers",
+          "tokenization",
+          "stemming"
+        ]
+      },
+      {
+        "terms": [
+          "BM25",
+          "faceting",
+          "fuzzy matching",
+          "full-text search"
+        ]
+      },
+      {
+        "terms": [
+          "Graph traversal",
+          "graph query languages"
+        ]
+      },
+      {
+        "terms": [
+          "Retention",
+          "downsampling",
+          "rollups"
+        ]
+      },
+      {
+        "terms": [
+          "Vector databases",
+          "approximate nearest neighbors"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Elasticsearch reference",
+        "https://www.elastic.co/docs/reference/elasticsearch/"
+      ],
+      [
+        "PostgreSQL documentation",
+        "https://www.postgresql.org/docs/current/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "distributed-systems",
+    "title": "Distributed systems",
+    "entries": [
+      {
+        "terms": [
+          "Partial failure",
+          "failure detection",
+          "network partitions"
+        ]
+      },
+      {
+        "terms": [
+          "Replication",
+          "sharding",
+          "rebalancing"
+        ]
+      },
+      {
+        "terms": [
+          "Leader-follower",
+          "multi-leader",
+          "leaderless replication"
+        ]
+      },
+      {
+        "terms": [
+          "Synchronous replication",
+          "asynchronous replication",
+          "replication lag"
+        ]
+      },
+      {
+        "terms": [
+          "Strong consistency",
+          "eventual consistency",
+          "causal consistency"
+        ]
+      },
+      {
+        "terms": [
+          "Linearizability",
+          "sequential consistency",
+          "serializability"
+        ]
+      },
+      {
+        "terms": [
+          "Read-your-writes",
+          "monotonic reads",
+          "consistent-prefix reads"
+        ]
+      },
+      {
+        "terms": [
+          "CAP",
+          "PACELC",
+          "quorum reads",
+          "quorum writes"
+        ]
+      },
+      {
+        "terms": [
+          "Raft",
+          "Paxos",
+          "consensus",
+          "leader election"
+        ]
+      },
+      {
+        "terms": [
+          "Split-brain",
+          "leases",
+          "distributed locks",
+          "fencing tokens"
+        ]
+      },
+      {
+        "terms": [
+          "Lamport clocks",
+          "vector clocks",
+          "clock skew"
+        ]
+      },
+      {
+        "terms": [
+          "CRDTs",
+          "conflict resolution",
+          "last-write-wins"
+        ]
+      },
+      {
+        "terms": [
+          "Anti-entropy",
+          "read repair",
+          "hinted handoff",
+          "gossip"
+        ]
+      },
+      {
+        "terms": [
+          "Consistent hashing",
+          "virtual nodes",
+          "hot partitions",
+          "Byzantine faults"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Google SRE books",
+        "https://sre.google/books/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "messaging",
+    "title": "Messaging and durable workflows",
+    "entries": [
+      {
+        "terms": [
+          "Queues",
+          "publish-subscribe",
+          "event streams"
+        ]
+      },
+      {
+        "terms": [
+          "Producers",
+          "consumers",
+          "consumer groups",
+          "partitions",
+          "offsets"
+        ]
+      },
+      {
+        "terms": [
+          "At-most-once",
+          "at-least-once",
+          "exactly-once semantics"
+        ]
+      },
+      {
+        "terms": [
+          "Acknowledgments",
+          "visibility timeouts",
+          "redelivery"
+        ]
+      },
+      {
+        "terms": [
+          "Exponential backoff",
+          "jitter",
+          "retry budgets"
+        ]
+      },
+      {
+        "terms": [
+          "Dead-letter queues",
+          "poison messages"
+        ]
+      },
+      {
+        "terms": [
+          "Idempotent consumers",
+          "deduplication",
+          "inbox pattern"
+        ]
+      },
+      {
+        "terms": [
+          "Transactional outbox",
+          "CDC"
+        ]
+      },
+      {
+        "terms": [
+          "Sagas",
+          "compensation",
+          "orchestration",
+          "choreography"
+        ]
+      },
+      {
+        "terms": [
+          "Delayed jobs",
+          "scheduled jobs",
+          "durable execution",
+          "checkpointing"
+        ]
+      },
+      {
+        "terms": [
+          "Replay",
+          "retention",
+          "schema registry",
+          "event versioning"
+        ]
+      },
+      {
+        "terms": [
+          "Consumer lag",
+          "backpressure",
+          "queue growth",
+          "cancellation"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Apache Kafka documentation",
+        "https://kafka.apache.org/documentation/"
+      ],
+      [
+        "Google SRE books",
+        "https://sre.google/books/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "data-engineering",
+    "title": "Data engineering",
+    "entries": [
+      {
+        "terms": [
+          "ETL",
+          "ELT",
+          "batch processing",
+          "stream processing"
+        ]
+      },
+      {
+        "terms": [
+          "Event time",
+          "processing time",
+          "watermarks",
+          "late events"
+        ]
+      },
+      {
+        "terms": [
+          "Tumbling windows",
+          "hopping windows",
+          "sliding windows",
+          "session windows"
+        ]
+      },
+      {
+        "terms": [
+          "Stateful processing",
+          "stream joins",
+          "checkpoints"
+        ]
+      },
+      {
+        "terms": [
+          "Data warehouse",
+          "data lake",
+          "lakehouse",
+          "OLTP",
+          "OLAP"
+        ]
+      },
+      {
+        "terms": [
+          "Columnar storage",
+          "Parquet",
+          "Avro",
+          "ORC",
+          "compression"
+        ]
+      },
+      {
+        "terms": [
+          "Star schema",
+          "snowflake schema",
+          "dimensional modeling"
+        ]
+      },
+      {
+        "terms": [
+          "Slowly changing dimensions"
+        ]
+      },
+      {
+        "terms": [
+          "Data contracts",
+          "schema evolution",
+          "lineage",
+          "catalogs"
+        ]
+      },
+      {
+        "terms": [
+          "Freshness",
+          "completeness",
+          "reconciliation",
+          "backfills",
+          "incremental processing"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Apache Flink documentation",
+        "https://nightlies.apache.org/flink/flink-docs-stable/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "reliability",
+    "title": "Reliability and resilience",
+    "entries": [
+      {
+        "terms": [
+          "Availability",
+          "reliability",
+          "durability",
+          "fault tolerance"
+        ]
+      },
+      {
+        "terms": [
+          "SLI",
+          "SLO",
+          "SLA",
+          "error budget"
+        ]
+      },
+      {
+        "terms": [
+          "Fault domains",
+          "blast radius",
+          "redundancy"
+        ]
+      },
+      {
+        "terms": [
+          "Circuit breaker",
+          "bulkhead",
+          "graceful degradation"
+        ]
+      },
+      {
+        "terms": [
+          "Retry amplification",
+          "cascading failure",
+          "thundering herd"
+        ]
+      },
+      {
+        "terms": [
+          "Timeouts",
+          "deadline propagation",
+          "cancellation"
+        ]
+      },
+      {
+        "terms": [
+          "Liveness",
+          "readiness",
+          "startup checks"
+        ]
+      },
+      {
+        "terms": [
+          "Failover",
+          "failback",
+          "regional evacuation"
+        ]
+      },
+      {
+        "terms": [
+          "Disaster recovery",
+          "RPO",
+          "RTO",
+          "restore drills"
+        ]
+      },
+      {
+        "terms": [
+          "Chaos engineering",
+          "fault injection",
+          "overload protection"
+        ]
+      },
+      {
+        "terms": [
+          "On-call",
+          "runbooks",
+          "incident response",
+          "postmortems",
+          "toil"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Google SRE books",
+        "https://sre.google/books/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "observability",
+    "title": "Observability and debugging",
+    "entries": [
+      {
+        "terms": [
+          "Logs",
+          "metrics",
+          "traces",
+          "profiles"
+        ]
+      },
+      {
+        "terms": [
+          "Structured logs",
+          "correlation IDs",
+          "trace context"
+        ]
+      },
+      {
+        "terms": [
+          "Spans",
+          "distributed tracing",
+          "context propagation"
+        ]
+      },
+      {
+        "terms": [
+          "Counters",
+          "gauges",
+          "histograms",
+          "summaries"
+        ]
+      },
+      {
+        "terms": [
+          "RED method",
+          "USE method",
+          "golden signals"
+        ]
+      },
+      {
+        "terms": [
+          "p50",
+          "p95",
+          "p99",
+          "tail latency"
+        ]
+      },
+      {
+        "terms": [
+          "Cardinality",
+          "sampling",
+          "exemplars"
+        ]
+      },
+      {
+        "terms": [
+          "Head sampling",
+          "tail sampling"
+        ]
+      },
+      {
+        "terms": [
+          "Burn-rate alerts",
+          "actionable alerts",
+          "alert fatigue"
+        ]
+      },
+      {
+        "terms": [
+          "CPU profiles",
+          "heap profiles",
+          "lock profiles",
+          "flame graphs"
+        ]
+      },
+      {
+        "terms": [
+          "Thread dumps",
+          "core dumps",
+          "query tracing",
+          "hypothesis testing"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Google SRE books",
+        "https://sre.google/books/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "performance",
+    "title": "Performance and capacity",
+    "entries": [
+      {
+        "terms": [
+          "Latency",
+          "throughput",
+          "utilization",
+          "saturation"
+        ]
+      },
+      {
+        "terms": [
+          "Tail latency",
+          "fan-out amplification",
+          "stragglers"
+        ]
+      },
+      {
+        "terms": [
+          "Little’s Law",
+          "queueing theory",
+          "queue stability"
+        ]
+      },
+      {
+        "terms": [
+          "Amdahl’s Law",
+          "scalability limits"
+        ]
+      },
+      {
+        "terms": [
+          "Load testing",
+          "stress testing",
+          "soak testing",
+          "spike testing"
+        ]
+      },
+      {
+        "terms": [
+          "Open-loop load",
+          "closed-loop load",
+          "coordinated omission"
+        ]
+      },
+      {
+        "terms": [
+          "Warmup",
+          "cold starts",
+          "benchmark bias"
+        ]
+      },
+      {
+        "terms": [
+          "Batching",
+          "pipelining",
+          "parallelism"
+        ]
+      },
+      {
+        "terms": [
+          "Connection pools",
+          "thread pools",
+          "memory pressure",
+          "GC pauses"
+        ]
+      },
+      {
+        "terms": [
+          "Vertical scaling",
+          "horizontal scaling",
+          "autoscaling lag",
+          "headroom"
+        ]
+      },
+      {
+        "terms": [
+          "Cost per request",
+          "cost per tenant",
+          "capacity forecasts"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Google SRE books",
+        "https://sre.google/books/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "security",
+    "title": "Security and privacy",
+    "entries": [
+      {
+        "terms": [
+          "Threat modeling",
+          "attack surface",
+          "trust boundary"
+        ]
+      },
+      {
+        "terms": [
+          "Least privilege",
+          "defense in depth",
+          "zero trust"
+        ]
+      },
+      {
+        "terms": [
+          "Authentication",
+          "authorization",
+          "accounting",
+          "RBAC",
+          "ABAC",
+          "ReBAC"
+        ]
+      },
+      {
+        "terms": [
+          "OAuth 2.0",
+          "OpenID Connect",
+          "PKCE"
+        ]
+      },
+      {
+        "terms": [
+          "Sessions",
+          "JWT",
+          "refresh tokens",
+          "revocation"
+        ]
+      },
+      {
+        "terms": [
+          "CSRF",
+          "XSS",
+          "SQL injection",
+          "command injection"
+        ]
+      },
+      {
+        "terms": [
+          "SSRF",
+          "path traversal",
+          "insecure deserialization",
+          "IDOR",
+          "BOLA"
+        ]
+      },
+      {
+        "terms": [
+          "Password hashing",
+          "salts",
+          "key derivation"
+        ]
+      },
+      {
+        "terms": [
+          "TLS",
+          "encryption at rest",
+          "envelope encryption",
+          "key rotation"
+        ]
+      },
+      {
+        "terms": [
+          "Secrets management",
+          "certificate rotation",
+          "workload identity"
+        ]
+      },
+      {
+        "terms": [
+          "Tenant isolation",
+          "row-level security",
+          "audit trails"
+        ]
+      },
+      {
+        "terms": [
+          "Data minimization",
+          "pseudonymization",
+          "anonymization",
+          "re-identification"
+        ]
+      },
+      {
+        "terms": [
+          "SBOM",
+          "dependency vulnerabilities",
+          "artifact signing",
+          "sandboxing"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OWASP Cheat Sheet Series",
+        "https://cheatsheetseries.owasp.org/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "infrastructure",
+    "title": "Infrastructure and cloud",
+    "entries": [
+      {
+        "terms": [
+          "Virtual machines",
+          "containers",
+          "image layers",
+          "registries"
+        ]
+      },
+      {
+        "terms": [
+          "Infrastructure as code",
+          "immutable infrastructure",
+          "drift detection"
+        ]
+      },
+      {
+        "terms": [
+          "Pods",
+          "deployments",
+          "services",
+          "ingress",
+          "scheduling"
+        ]
+      },
+      {
+        "terms": [
+          "Requests and limits",
+          "autoscaling",
+          "StatefulSets",
+          "persistent volumes"
+        ]
+      },
+      {
+        "terms": [
+          "Service mesh",
+          "sidecars",
+          "service discovery"
+        ]
+      },
+      {
+        "terms": [
+          "VPC",
+          "subnets",
+          "routing",
+          "security groups"
+        ]
+      },
+      {
+        "terms": [
+          "IAM",
+          "workload identity",
+          "short-lived credentials"
+        ]
+      },
+      {
+        "terms": [
+          "Managed databases",
+          "object storage",
+          "managed queues"
+        ]
+      },
+      {
+        "terms": [
+          "Multi-zone",
+          "multi-region",
+          "spot capacity",
+          "reserved capacity"
+        ]
+      },
+      {
+        "terms": [
+          "Configuration management",
+          "secret injection",
+          "environment parity"
+        ]
+      },
+      {
+        "terms": [
+          "FinOps",
+          "egress costs",
+          "resource tagging"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Kubernetes concepts",
+        "https://kubernetes.io/docs/concepts/"
+      ],
+      [
+        "Google SRE books",
+        "https://sre.google/books/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "testing-and-delivery",
+    "title": "Testing and delivery",
+    "entries": [
+      {
+        "terms": [
+          "Unit tests",
+          "integration tests",
+          "component tests",
+          "end-to-end tests"
+        ]
+      },
+      {
+        "terms": [
+          "Contract tests",
+          "property-based tests",
+          "fuzzing"
+        ]
+      },
+      {
+        "terms": [
+          "Mutation testing",
+          "differential testing"
+        ]
+      },
+      {
+        "terms": [
+          "Deterministic tests",
+          "flaky tests",
+          "test isolation"
+        ]
+      },
+      {
+        "terms": [
+          "Mocks",
+          "stubs",
+          "fakes",
+          "test doubles"
+        ]
+      },
+      {
+        "terms": [
+          "Test pyramid",
+          "risk-based testing"
+        ]
+      },
+      {
+        "terms": [
+          "CI/CD",
+          "artifact promotion",
+          "reproducible builds",
+          "hermetic builds"
+        ]
+      },
+      {
+        "terms": [
+          "Feature flags",
+          "canary release",
+          "blue-green deployment",
+          "rolling deployment"
+        ]
+      },
+      {
+        "terms": [
+          "Rollback",
+          "roll-forward",
+          "schema compatibility"
+        ]
+      },
+      {
+        "terms": [
+          "Trunk-based development",
+          "GitHub flow",
+          "release gates"
+        ]
+      },
+      {
+        "terms": [
+          "Supply-chain security",
+          "release observability"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "GitHub documentation",
+        "https://docs.github.com/"
+      ],
+      [
+        "Google SRE books",
+        "https://sre.google/books/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "frontend",
+    "title": "Frontend and client engineering",
+    "entries": [
+      {
+        "terms": [
+          "DOM",
+          "CSSOM",
+          "layout",
+          "paint",
+          "compositing"
+        ]
+      },
+      {
+        "terms": [
+          "Event loop",
+          "tasks",
+          "microtasks"
+        ]
+      },
+      {
+        "terms": [
+          "Client state",
+          "server state",
+          "URL state"
+        ]
+      },
+      {
+        "terms": [
+          "Optimistic updates",
+          "rollback",
+          "cache invalidation"
+        ]
+      },
+      {
+        "terms": [
+          "CSR",
+          "SSR",
+          "SSG",
+          "hydration",
+          "streaming rendering"
+        ]
+      },
+      {
+        "terms": [
+          "Progressive enhancement",
+          "code splitting",
+          "tree shaking",
+          "lazy loading"
+        ]
+      },
+      {
+        "terms": [
+          "Virtualization",
+          "memoization",
+          "render profiling"
+        ]
+      },
+      {
+        "terms": [
+          "Accessibility",
+          "semantic HTML",
+          "keyboard navigation"
+        ]
+      },
+      {
+        "terms": [
+          "Core Web Vitals",
+          "performance budgets"
+        ]
+      },
+      {
+        "terms": [
+          "IndexedDB",
+          "local storage",
+          "session storage",
+          "service workers"
+        ]
+      },
+      {
+        "terms": [
+          "Offline synchronization",
+          "responsive design",
+          "design systems"
+        ]
+      },
+      {
+        "terms": [
+          "CSP",
+          "internationalization",
+          "localization",
+          "timezones"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "MDN Web Docs",
+        "https://developer.mozilla.org/en-US/docs/Web"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "saas-workflows",
+    "title": "SaaS and business workflows",
+    "entries": [
+      {
+        "terms": [
+          "Multi-tenancy",
+          "tenant provisioning",
+          "tenant isolation"
+        ]
+      },
+      {
+        "terms": [
+          "Shared database",
+          "separate schemas",
+          "separate databases"
+        ]
+      },
+      {
+        "terms": [
+          "Entitlements",
+          "subscriptions",
+          "usage metering"
+        ]
+      },
+      {
+        "terms": [
+          "Payment idempotency",
+          "billing reconciliation"
+        ]
+      },
+      {
+        "terms": [
+          "Money precision",
+          "currency",
+          "rounding"
+        ]
+      },
+      {
+        "terms": [
+          "Order state machines",
+          "payment state machines",
+          "approval workflows"
+        ]
+      },
+      {
+        "terms": [
+          "Audit trails",
+          "immutable financial records"
+        ]
+      },
+      {
+        "terms": [
+          "Notifications",
+          "delivery preferences",
+          "deduplication"
+        ]
+      },
+      {
+        "terms": [
+          "Temporal modeling",
+          "effective dates",
+          "timezone boundaries"
+        ]
+      },
+      {
+        "terms": [
+          "Data export",
+          "deletion",
+          "retention"
+        ]
+      },
+      {
+        "terms": [
+          "Tenant configuration",
+          "SSO",
+          "provisioning",
+          "noisy-neighbor protection"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OWASP Cheat Sheet Series",
+        "https://cheatsheetseries.owasp.org/"
+      ],
+      [
+        "PostgreSQL documentation",
+        "https://www.postgresql.org/docs/current/"
+      ]
+    ]
+  },
+  {
+    "track": "software",
+    "slug": "distributed-key-value-stores",
+    "title": "Distributed key-value stores and Redis",
+    "entries": [
+      {
+        "terms": [
+          "Distributed key-value store",
+          "Redis",
+          "Valkey",
+          "etcd"
+        ]
+      },
+      {
+        "terms": [
+          "Redis strings",
+          "hashes",
+          "lists",
+          "sets",
+          "sorted sets",
+          "streams",
+          "bitmaps",
+          "HyperLogLog"
+        ]
+      },
+      {
+        "terms": [
+          "Redis Cluster",
+          "hash slots",
+          "hash tags",
+          "MOVED",
+          "ASK",
+          "resharding"
+        ]
+      },
+      {
+        "terms": [
+          "Redis replication",
+          "replication lag",
+          "asynchronous replication",
+          "Redis Sentinel",
+          "failover"
+        ]
+      },
+      {
+        "terms": [
+          "RDB snapshots",
+          "AOF",
+          "appendfsync",
+          "AOF rewrite",
+          "persistence recovery"
+        ]
+      },
+      {
+        "terms": [
+          "Redis TTL",
+          "lazy expiration",
+          "active expiration",
+          "maxmemory",
+          "eviction policy"
+        ]
+      },
+      {
+        "terms": [
+          "MULTI/EXEC",
+          "WATCH",
+          "Lua scripts",
+          "Redis Functions",
+          "atomicity"
+        ]
+      },
+      {
+        "terms": [
+          "Redis pipelining",
+          "transactions",
+          "connection pools",
+          "blocking commands"
+        ]
+      },
+      {
+        "terms": [
+          "Redis Pub/Sub",
+          "Redis Streams",
+          "consumer groups",
+          "pending entries",
+          "XACK",
+          "XAUTOCLAIM"
+        ]
+      },
+      {
+        "terms": [
+          "Hot keys",
+          "big keys",
+          "cache stampede",
+          "cluster imbalance",
+          "network partitions"
+        ]
+      },
+      {
+        "terms": [
+          "Redis locks",
+          "lease expiry",
+          "fencing tokens",
+          "Redlock",
+          "lock safety assumptions"
+        ]
+      },
+      {
+        "terms": [
+          "Linearizable KV reads",
+          "compare-and-swap",
+          "watches",
+          "leases",
+          "consensus-backed coordination"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Redis documentation",
+        "https://redis.io/docs/latest/"
+      ],
+      [
+        "etcd documentation",
+        "https://etcd.io/docs/"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "model-integration",
+    "title": "Model behavior and API integration",
+    "entries": [
+      {
+        "terms": [
+          "Tokens",
+          "tokenization",
+          "input token budget",
+          "output token budget",
+          "context window"
+        ]
+      },
+      {
+        "terms": [
+          "Model capabilities",
+          "modalities",
+          "capability detection",
+          "provider compatibility"
+        ]
+      },
+      {
+        "terms": [
+          "Model selection",
+          "routing",
+          "fallback",
+          "escalation",
+          "version pinning",
+          "model migrations"
+        ]
+      },
+      {
+        "terms": [
+          "Instruction hierarchy",
+          "instruction following",
+          "nondeterminism",
+          "reproducibility limits"
+        ]
+      },
+      {
+        "terms": [
+          "Sampling",
+          "temperature",
+          "top-p",
+          "stop sequences",
+          "reasoning effort",
+          "inference budgets"
+        ]
+      },
+      {
+        "terms": [
+          "Structured outputs",
+          "tool calls",
+          "final responses",
+          "refusals",
+          "truncation"
+        ]
+      },
+      {
+        "terms": [
+          "Streaming events",
+          "partial responses",
+          "completion status",
+          "cancellation"
+        ]
+      },
+      {
+        "terms": [
+          "Timeouts",
+          "retries",
+          "quotas",
+          "rate limits",
+          "ambiguous outcomes"
+        ]
+      },
+      {
+        "terms": [
+          "Model confidence",
+          "factual correctness",
+          "knowledge cutoff",
+          "retrieved evidence"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "prompt-engineering",
+    "title": "Prompt engineering",
+    "entries": [
+      {
+        "terms": [
+          "System instructions",
+          "developer instructions",
+          "user requests",
+          "instruction precedence"
+        ]
+      },
+      {
+        "terms": [
+          "Task framing",
+          "constraints",
+          "success criteria",
+          "ambiguity handling"
+        ]
+      },
+      {
+        "terms": [
+          "Zero-shot prompting",
+          "few-shot prompting",
+          "example selection",
+          "negative examples"
+        ]
+      },
+      {
+        "terms": [
+          "Delimiters",
+          "structured input",
+          "instruction-data separation"
+        ]
+      },
+      {
+        "terms": [
+          "Task decomposition",
+          "staged prompting",
+          "prompt chaining"
+        ]
+      },
+      {
+        "terms": [
+          "Output contracts",
+          "JSON schemas",
+          "formatting constraints"
+        ]
+      },
+      {
+        "terms": [
+          "Grounding instructions",
+          "citation requirements",
+          "abstention",
+          "clarification"
+        ]
+      },
+      {
+        "terms": [
+          "Prompt templates",
+          "variables",
+          "prompt versioning",
+          "prompt regression tests"
+        ]
+      },
+      {
+        "terms": [
+          "Conflicting instructions",
+          "overconstraint",
+          "prompt brittleness",
+          "underspecification"
+        ]
+      },
+      {
+        "terms": [
+          "Prompt optimization",
+          "evaluation flywheel",
+          "measured outcomes"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "context-engineering",
+    "title": "Context engineering",
+    "entries": [
+      {
+        "terms": [
+          "Context construction",
+          "context selection",
+          "relevance",
+          "authority",
+          "freshness",
+          "provenance"
+        ]
+      },
+      {
+        "terms": [
+          "Context ordering",
+          "placement",
+          "token allocation",
+          "context budgets"
+        ]
+      },
+      {
+        "terms": [
+          "Truncation",
+          "compression",
+          "compaction",
+          "conversation summarization"
+        ]
+      },
+      {
+        "terms": [
+          "Selective history retrieval",
+          "just-in-time retrieval",
+          "progressive disclosure"
+        ]
+      },
+      {
+        "terms": [
+          "Lost-in-the-middle",
+          "context pollution",
+          "stale context",
+          "contradictory evidence"
+        ]
+      },
+      {
+        "terms": [
+          "User preferences",
+          "task instructions",
+          "task state",
+          "retrieved evidence"
+        ]
+      },
+      {
+        "terms": [
+          "Tool-result filtering",
+          "result summarization",
+          "source attribution"
+        ]
+      },
+      {
+        "terms": [
+          "Prompt caching",
+          "reusable prefixes",
+          "context reuse"
+        ]
+      },
+      {
+        "terms": [
+          "Constraint preservation",
+          "context handoff",
+          "session continuation"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "knowledge-bases",
+    "title": "Knowledge-base ingestion",
+    "entries": [
+      {
+        "terms": [
+          "Source connectors",
+          "synchronization",
+          "change detection",
+          "incremental ingestion"
+        ]
+      },
+      {
+        "terms": [
+          "Document parsing",
+          "OCR",
+          "layout extraction",
+          "tables",
+          "captions",
+          "images"
+        ]
+      },
+      {
+        "terms": [
+          "Normalization",
+          "deduplication",
+          "ingestion validation"
+        ]
+      },
+      {
+        "terms": [
+          "Document IDs",
+          "versions",
+          "stable chunk IDs",
+          "source URLs"
+        ]
+      },
+      {
+        "terms": [
+          "Metadata extraction",
+          "source permissions",
+          "access-control metadata"
+        ]
+      },
+      {
+        "terms": [
+          "Fixed-size chunking",
+          "recursive chunking",
+          "semantic chunking",
+          "structure-aware chunking"
+        ]
+      },
+      {
+        "terms": [
+          "Chunk overlap",
+          "parent-child chunks",
+          "document hierarchy"
+        ]
+      },
+      {
+        "terms": [
+          "Failed-ingestion recovery",
+          "dead-letter ingestion",
+          "backfills"
+        ]
+      },
+      {
+        "terms": [
+          "Freshness",
+          "expiration",
+          "deletion propagation",
+          "data lineage"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "rag-and-retrieval",
+    "title": "Retrieval and RAG",
+    "entries": [
+      {
+        "terms": [
+          "RAG",
+          "dense retrieval",
+          "sparse retrieval",
+          "keyword search",
+          "embeddings"
+        ]
+      },
+      {
+        "terms": [
+          "Embedding compatibility",
+          "cosine similarity",
+          "vector distance",
+          "normalization"
+        ]
+      },
+      {
+        "terms": [
+          "ANN",
+          "HNSW",
+          "IVF",
+          "product quantization",
+          "index tuning"
+        ]
+      },
+      {
+        "terms": [
+          "BM25",
+          "hybrid search",
+          "reciprocal rank fusion"
+        ]
+      },
+      {
+        "terms": [
+          "Metadata filtering",
+          "permission filtering",
+          "tenant-aware retrieval"
+        ]
+      },
+      {
+        "terms": [
+          "Query rewriting",
+          "query expansion",
+          "query decomposition",
+          "multi-query retrieval"
+        ]
+      },
+      {
+        "terms": [
+          "Bi-encoders",
+          "cross-encoders",
+          "reranking"
+        ]
+      },
+      {
+        "terms": [
+          "Parent-document retrieval",
+          "hierarchical retrieval",
+          "graph-assisted retrieval"
+        ]
+      },
+      {
+        "terms": [
+          "Deduplication",
+          "diversity",
+          "maximal marginal relevance",
+          "context packing"
+        ]
+      },
+      {
+        "terms": [
+          "Recall@k",
+          "precision@k",
+          "MRR",
+          "nDCG"
+        ]
+      },
+      {
+        "terms": [
+          "No-result behavior",
+          "insufficient evidence",
+          "retrieval freshness"
+        ]
+      },
+      {
+        "terms": [
+          "Groundedness",
+          "faithfulness",
+          "citation attribution",
+          "citation verification"
+        ]
+      },
+      {
+        "terms": [
+          "Embedding migrations",
+          "reindexing",
+          "retrieval poisoning"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "tools-and-mcp",
+    "title": "Tools, function calling, and MCP",
+    "entries": [
+      {
+        "terms": [
+          "Tool discovery",
+          "tool selection",
+          "tool descriptions",
+          "tool granularity"
+        ]
+      },
+      {
+        "terms": [
+          "Function calling",
+          "JSON schemas",
+          "typed arguments",
+          "argument validation"
+        ]
+      },
+      {
+        "terms": [
+          "Typed outputs",
+          "structured errors",
+          "retryable errors",
+          "permanent errors"
+        ]
+      },
+      {
+        "terms": [
+          "Read tools",
+          "write tools",
+          "synchronous tools",
+          "asynchronous tools"
+        ]
+      },
+      {
+        "terms": [
+          "Parallel tool calls",
+          "dependency ordering",
+          "tool-call budgets"
+        ]
+      },
+      {
+        "terms": [
+          "Timeouts",
+          "cancellation",
+          "pagination",
+          "result-size limits"
+        ]
+      },
+      {
+        "terms": [
+          "Idempotency",
+          "deduplication",
+          "tool contract testing"
+        ]
+      },
+      {
+        "terms": [
+          "Authorization",
+          "scoped credentials",
+          "dry runs",
+          "previews",
+          "audit trails"
+        ]
+      },
+      {
+        "terms": [
+          "Tool-result sanitization",
+          "untrusted tool outputs"
+        ]
+      },
+      {
+        "terms": [
+          "MCP tools",
+          "MCP resources",
+          "MCP prompts",
+          "capability negotiation"
+        ]
+      },
+      {
+        "terms": [
+          "MCP transports",
+          "session lifecycle",
+          "protocol versioning",
+          "MCP authorization"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ],
+      [
+        "MCP specification",
+        "https://modelcontextprotocol.io/specification/"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "loop-engineering",
+    "title": "Agent loop engineering",
+    "entries": [
+      {
+        "terms": [
+          "Observe-decide-act loop",
+          "action-result feedback",
+          "next-action selection"
+        ]
+      },
+      {
+        "terms": [
+          "Explicit task state",
+          "objectives",
+          "completion criteria"
+        ]
+      },
+      {
+        "terms": [
+          "Stop conditions",
+          "maximum steps",
+          "token budgets",
+          "time budgets",
+          "cost budgets"
+        ]
+      },
+      {
+        "terms": [
+          "Progress detection",
+          "repeated-action detection",
+          "stuck-loop detection"
+        ]
+      },
+      {
+        "terms": [
+          "No-progress termination",
+          "partial completion",
+          "handoff"
+        ]
+      },
+      {
+        "terms": [
+          "Replanning",
+          "recoverable failure",
+          "terminal failure"
+        ]
+      },
+      {
+        "terms": [
+          "Retry policy",
+          "recovery policy",
+          "tool failure recovery"
+        ]
+      },
+      {
+        "terms": [
+          "Checkpointing",
+          "resumability",
+          "durable state"
+        ]
+      },
+      {
+        "terms": [
+          "Interruptibility",
+          "user steering",
+          "cancellation propagation"
+        ]
+      },
+      {
+        "terms": [
+          "Context compaction",
+          "objective preservation",
+          "verified completion"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "harness-and-orchestration",
+    "title": "Agent harness and orchestration",
+    "entries": [
+      {
+        "terms": [
+          "Agent harness",
+          "workflow graph",
+          "state machine"
+        ]
+      },
+      {
+        "terms": [
+          "Deterministic routing",
+          "model-selected routing"
+        ]
+      },
+      {
+        "terms": [
+          "Planner-executor",
+          "supervisor-worker",
+          "router patterns"
+        ]
+      },
+      {
+        "terms": [
+          "Handoffs",
+          "delegation",
+          "sequential execution",
+          "parallel execution"
+        ]
+      },
+      {
+        "terms": [
+          "Dependency graphs",
+          "shared state",
+          "isolated state"
+        ]
+      },
+      {
+        "terms": [
+          "Durable workflows",
+          "event-driven execution",
+          "long-running jobs"
+        ]
+      },
+      {
+        "terms": [
+          "Checkpoints",
+          "replay",
+          "session lifecycle"
+        ]
+      },
+      {
+        "terms": [
+          "Error boundaries",
+          "concurrency limits",
+          "resource isolation"
+        ]
+      },
+      {
+        "terms": [
+          "Workspace management",
+          "artifact management",
+          "runtime policy enforcement"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "memory-engineering",
+    "title": "Memory engineering",
+    "entries": [
+      {
+        "terms": [
+          "Working memory",
+          "session memory",
+          "persistent memory"
+        ]
+      },
+      {
+        "terms": [
+          "Episodic memory",
+          "semantic memory",
+          "procedural memory"
+        ]
+      },
+      {
+        "terms": [
+          "Explicit memories",
+          "inferred memories",
+          "user preferences",
+          "task-local instructions"
+        ]
+      },
+      {
+        "terms": [
+          "Memory extraction",
+          "write policies",
+          "relevance",
+          "retrieval"
+        ]
+      },
+      {
+        "terms": [
+          "Provenance",
+          "confidence",
+          "timestamps"
+        ]
+      },
+      {
+        "terms": [
+          "Deduplication",
+          "conflict resolution",
+          "staleness",
+          "expiry"
+        ]
+      },
+      {
+        "terms": [
+          "Forgetting",
+          "user correction",
+          "deletion propagation"
+        ]
+      },
+      {
+        "terms": [
+          "Tenant isolation",
+          "user isolation",
+          "memory poisoning"
+        ]
+      },
+      {
+        "terms": [
+          "Summaries",
+          "original evidence",
+          "cross-session consistency"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "planning-and-verification",
+    "title": "Planning, reasoning, and verification",
+    "entries": [
+      {
+        "terms": [
+          "Task decomposition",
+          "dependency-aware planning",
+          "replanning"
+        ]
+      },
+      {
+        "terms": [
+          "Hypothesis generation",
+          "evidence gathering",
+          "external verification"
+        ]
+      },
+      {
+        "terms": [
+          "Critique-revision loops",
+          "generator-verifier pattern"
+        ]
+      },
+      {
+        "terms": [
+          "Correlated errors",
+          "independent verification",
+          "consistency checks"
+        ]
+      },
+      {
+        "terms": [
+          "Constraint checking",
+          "source verification",
+          "executable checks"
+        ]
+      },
+      {
+        "terms": [
+          "Tests",
+          "validators",
+          "database queries",
+          "artifact inspection"
+        ]
+      },
+      {
+        "terms": [
+          "Abstention",
+          "confidence calibration",
+          "clarification"
+        ]
+      },
+      {
+        "terms": [
+          "Plausibility",
+          "demonstrated correctness",
+          "completion evidence"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "action-safety",
+    "title": "Actions and side-effect safety",
+    "entries": [
+      {
+        "terms": [
+          "Read-only actions",
+          "consequential actions",
+          "action previews"
+        ]
+      },
+      {
+        "terms": [
+          "Human-in-the-loop",
+          "approvals",
+          "approval binding"
+        ]
+      },
+      {
+        "terms": [
+          "Permission scope",
+          "delegation",
+          "least privilege"
+        ]
+      },
+      {
+        "terms": [
+          "Idempotency keys",
+          "duplicate prevention",
+          "request identity"
+        ]
+      },
+      {
+        "terms": [
+          "Ambiguous outcomes",
+          "reconciliation",
+          "read-after-write verification"
+        ]
+      },
+      {
+        "terms": [
+          "Transaction boundaries",
+          "compensation",
+          "rollback",
+          "roll-forward"
+        ]
+      },
+      {
+        "terms": [
+          "TOCTOU",
+          "optimistic concurrency",
+          "stale approvals"
+        ]
+      },
+      {
+        "terms": [
+          "Auditability",
+          "action provenance",
+          "execution receipts"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ],
+      [
+        "OWASP Cheat Sheet Series",
+        "https://cheatsheetseries.owasp.org/"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "evaluation",
+    "title": "Evaluation engineering",
+    "entries": [
+      {
+        "terms": [
+          "Representative datasets",
+          "production examples",
+          "golden datasets"
+        ]
+      },
+      {
+        "terms": [
+          "Rubrics",
+          "golden answers",
+          "human annotation",
+          "inter-rater agreement"
+        ]
+      },
+      {
+        "terms": [
+          "Component evaluation",
+          "end-to-end evaluation",
+          "task completion rate"
+        ]
+      },
+      {
+        "terms": [
+          "Instruction adherence",
+          "retrieval relevance",
+          "groundedness",
+          "citation correctness"
+        ]
+      },
+      {
+        "terms": [
+          "Tool-selection accuracy",
+          "argument correctness",
+          "unauthorized-action rate"
+        ]
+      },
+      {
+        "terms": [
+          "Loop efficiency",
+          "unnecessary actions",
+          "recovery success"
+        ]
+      },
+      {
+        "terms": [
+          "Deterministic graders",
+          "model graders",
+          "judge calibration",
+          "judge bias"
+        ]
+      },
+      {
+        "terms": [
+          "Adversarial cases",
+          "slice analysis",
+          "regression suites"
+        ]
+      },
+      {
+        "terms": [
+          "Repeated runs",
+          "stochastic variation",
+          "confidence intervals"
+        ]
+      },
+      {
+        "terms": [
+          "Online experiments",
+          "shadow runs",
+          "canary evaluation"
+        ]
+      },
+      {
+        "terms": [
+          "Quality-latency-cost tradeoffs",
+          "evaluation coverage"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "observability",
+    "title": "LLM observability and debugging",
+    "entries": [
+      {
+        "terms": [
+          "Execution traces",
+          "model spans",
+          "tool spans",
+          "handoff traces"
+        ]
+      },
+      {
+        "terms": [
+          "Prompt versions",
+          "context versions",
+          "retrieved-document IDs"
+        ]
+      },
+      {
+        "terms": [
+          "Token usage",
+          "cost attribution",
+          "budget tracking"
+        ]
+      },
+      {
+        "terms": [
+          "Time to first token",
+          "end-to-end latency",
+          "tool latency"
+        ]
+      },
+      {
+        "terms": [
+          "Tool failures",
+          "loop counts",
+          "repeated actions",
+          "timeout rates"
+        ]
+      },
+      {
+        "terms": [
+          "Error taxonomies",
+          "trace replay",
+          "production-to-eval datasets"
+        ]
+      },
+      {
+        "terms": [
+          "Sensitive-data redaction",
+          "access-controlled telemetry"
+        ]
+      },
+      {
+        "terms": [
+          "Prompt failures",
+          "context failures",
+          "retrieval failures",
+          "model failures",
+          "application failures"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "security",
+    "title": "LLM application security",
+    "entries": [
+      {
+        "terms": [
+          "Direct prompt injection",
+          "indirect prompt injection",
+          "tool-output injection"
+        ]
+      },
+      {
+        "terms": [
+          "Instruction-data separation",
+          "trust boundaries",
+          "untrusted documents"
+        ]
+      },
+      {
+        "terms": [
+          "Retrieval poisoning",
+          "memory poisoning"
+        ]
+      },
+      {
+        "terms": [
+          "Secret leakage",
+          "data exfiltration",
+          "cross-tenant leakage"
+        ]
+      },
+      {
+        "terms": [
+          "Excessive agency",
+          "privilege escalation",
+          "confused-deputy attacks"
+        ]
+      },
+      {
+        "terms": [
+          "Malicious URLs",
+          "SSRF",
+          "generated command injection"
+        ]
+      },
+      {
+        "terms": [
+          "Sandbox isolation",
+          "network egress controls",
+          "output validation"
+        ]
+      },
+      {
+        "terms": [
+          "Approval bypass",
+          "tool supply chain",
+          "connector permissions"
+        ]
+      },
+      {
+        "terms": [
+          "Jailbreaks",
+          "adversarial evaluation",
+          "policy enforcement"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OWASP Cheat Sheet Series",
+        "https://cheatsheetseries.owasp.org/"
+      ],
+      [
+        "OWASP GenAI security project",
+        "https://genai.owasp.org/"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "performance-and-cost",
+    "title": "LLM performance and cost",
+    "entries": [
+      {
+        "terms": [
+          "Input token cost",
+          "output token cost",
+          "reasoning budgets"
+        ]
+      },
+      {
+        "terms": [
+          "Prompt caching",
+          "context reuse",
+          "reusable prefixes"
+        ]
+      },
+      {
+        "terms": [
+          "Response caching",
+          "semantic caching",
+          "cache invalidation",
+          "tenant isolation"
+        ]
+      },
+      {
+        "terms": [
+          "Model routing",
+          "small-model first pass",
+          "escalation"
+        ]
+      },
+      {
+        "terms": [
+          "Batching",
+          "parallelization",
+          "streaming"
+        ]
+      },
+      {
+        "terms": [
+          "Latency budgets",
+          "retrieval latency",
+          "tool latency"
+        ]
+      },
+      {
+        "terms": [
+          "Provider quotas",
+          "backpressure",
+          "admission control",
+          "retry amplification"
+        ]
+      },
+      {
+        "terms": [
+          "Cost per completed task",
+          "quality-adjusted cost",
+          "budget enforcement"
+        ]
+      },
+      {
+        "terms": [
+          "Graceful degradation",
+          "cancellation",
+          "unnecessary tool calls"
+        ]
+      },
+      {
+        "terms": [
+          "Prefill",
+          "decoding",
+          "KV cache",
+          "continuous batching",
+          "quantization"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "application-ux",
+    "title": "LLM application UX",
+    "entries": [
+      {
+        "terms": [
+          "Streaming responses",
+          "progress updates",
+          "perceived latency"
+        ]
+      },
+      {
+        "terms": [
+          "User interruption",
+          "user steering",
+          "cancellation"
+        ]
+      },
+      {
+        "terms": [
+          "Clarification UX",
+          "preview-before-action",
+          "approval UX"
+        ]
+      },
+      {
+        "terms": [
+          "Citations",
+          "source inspection",
+          "uncertainty communication"
+        ]
+      },
+      {
+        "terms": [
+          "Editable plans",
+          "partial results",
+          "recoverable errors"
+        ]
+      },
+      {
+        "terms": [
+          "Draft state",
+          "approved state",
+          "executed state"
+        ]
+      },
+      {
+        "terms": [
+          "Session continuity",
+          "undo",
+          "correction"
+        ]
+      },
+      {
+        "terms": [
+          "Accessibility",
+          "human handoff",
+          "trust calibration"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ],
+      [
+        "MDN Web Docs",
+        "https://developer.mozilla.org/en-US/docs/Web"
+      ]
+    ]
+  },
+  {
+    "track": "ai",
+    "slug": "multimodal-applications",
+    "title": "Multimodal application integration",
+    "entries": [
+      {
+        "terms": [
+          "Image inputs",
+          "document inputs",
+          "audio inputs",
+          "video frames"
+        ]
+      },
+      {
+        "terms": [
+          "OCR quality",
+          "layout understanding",
+          "image grounding"
+        ]
+      },
+      {
+        "terms": [
+          "Speech recognition",
+          "text-to-speech",
+          "speech-to-speech"
+        ]
+      },
+      {
+        "terms": [
+          "Voice activity detection",
+          "diarization",
+          "turn detection"
+        ]
+      },
+      {
+        "terms": [
+          "Streaming transcription",
+          "barge-in",
+          "interruption handling"
+        ]
+      },
+      {
+        "terms": [
+          "Word error rate",
+          "transcription latency",
+          "audio buffering"
+        ]
+      },
+      {
+        "terms": [
+          "Realtime sessions",
+          "transport selection",
+          "session recovery"
+        ]
+      },
+      {
+        "terms": [
+          "Multimodal prompt injection",
+          "consent",
+          "media retention"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ]
+    ]
+  },
+  {
+    "track": "principal",
+    "slug": "technical-strategy",
+    "title": "Technical strategy and architecture judgment",
+    "entries": [
+      {
+        "terms": [
+          "Problem framing",
+          "requirements discovery",
+          "functional requirements",
+          "quality attributes"
+        ]
+      },
+      {
+        "terms": [
+          "Nonfunctional requirements",
+          "measurable constraints",
+          "tradeoff analysis"
+        ]
+      },
+      {
+        "terms": [
+          "Decision-making under uncertainty",
+          "reversible decisions",
+          "irreversible decisions"
+        ]
+      },
+      {
+        "terms": [
+          "Build-buy-partner",
+          "total cost of ownership",
+          "unit economics"
+        ]
+      },
+      {
+        "terms": [
+          "Technical roadmaps",
+          "platform strategy",
+          "portfolio risk"
+        ]
+      },
+      {
+        "terms": [
+          "Standardization",
+          "team autonomy",
+          "technology adoption",
+          "technology retirement"
+        ]
+      },
+      {
+        "terms": [
+          "Migration sequencing",
+          "dependency management",
+          "technical debt prioritization"
+        ]
+      },
+      {
+        "terms": [
+          "Operability",
+          "maintainability",
+          "architecture governance"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Google SRE books",
+        "https://sre.google/books/"
+      ],
+      [
+        "GitHub documentation",
+        "https://docs.github.com/"
+      ]
+    ]
+  },
+  {
+    "track": "principal",
+    "slug": "organizational-engineering",
+    "title": "Organizational engineering",
+    "entries": [
+      {
+        "terms": [
+          "Cross-team interfaces",
+          "ownership boundaries",
+          "service ownership"
+        ]
+      },
+      {
+        "terms": [
+          "Platform teams",
+          "product teams",
+          "enabling teams"
+        ]
+      },
+      {
+        "terms": [
+          "Conway’s Law",
+          "cognitive load",
+          "developer experience"
+        ]
+      },
+      {
+        "terms": [
+          "Influence without authority",
+          "mentoring",
+          "sponsorship",
+          "delegation"
+        ]
+      },
+      {
+        "terms": [
+          "RFC review",
+          "design review",
+          "constructive disagreement"
+        ]
+      },
+      {
+        "terms": [
+          "Stakeholder alignment",
+          "negotiation",
+          "risk communication"
+        ]
+      },
+      {
+        "terms": [
+          "Engineering standards",
+          "exceptions",
+          "incident leadership"
+        ]
+      },
+      {
+        "terms": [
+          "Delivery bottlenecks",
+          "outcome metrics",
+          "learning culture"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "Google SRE books",
+        "https://sre.google/books/"
+      ]
+    ]
+  },
+  {
+    "track": "principal",
+    "slug": "applied-ai-strategy",
+    "title": "Principal-level applied AI judgment",
+    "entries": [
+      {
+        "terms": [
+          "AI suitability",
+          "deterministic workflows",
+          "probabilistic decisions"
+        ]
+      },
+      {
+        "terms": [
+          "Workflow-versus-agent choice",
+          "automation boundaries",
+          "human accountability"
+        ]
+      },
+      {
+        "terms": [
+          "Action severity",
+          "acceptable error rates",
+          "failure containment"
+        ]
+      },
+      {
+        "terms": [
+          "Evaluation coverage",
+          "real-world coverage",
+          "launch criteria"
+        ]
+      },
+      {
+        "terms": [
+          "Vendor dependency",
+          "portability",
+          "model upgrade strategy"
+        ]
+      },
+      {
+        "terms": [
+          "Data rights",
+          "retention",
+          "provenance",
+          "audit evidence"
+        ]
+      },
+      {
+        "terms": [
+          "Cost-quality-latency optimization",
+          "build-versus-buy"
+        ]
+      },
+      {
+        "terms": [
+          "Shared AI platform",
+          "application-specific harness",
+          "operational ownership"
+        ]
+      },
+      {
+        "terms": [
+          "Enforceable governance",
+          "policy-as-code",
+          "adoption strategy"
+        ]
+      }
+    ],
+    "references": [
+      [
+        "OpenAI agent engineering resources",
+        "https://developers.openai.com/learn/agents"
+      ],
+      [
+        "OWASP Cheat Sheet Series",
+        "https://cheatsheetseries.owasp.org/"
+      ]
+    ]
+  }
+]

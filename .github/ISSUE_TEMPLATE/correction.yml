@@ -1,0 +1,17 @@
+name: Report a correction
+about: Report an incorrect name, misplaced concept, or documentation problem.
+title: "Correction: "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Affected file or concept
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Problem and proposed correction
+      description: Include a source or reproduction steps when relevant.
+    validations:
+      required: true
