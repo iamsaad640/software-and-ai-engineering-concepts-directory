@@ -15,9 +15,9 @@
 - Retention; downsampling; rollups
 - Vector databases; approximate nearest neighbors
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [Elasticsearch reference](https://www.elastic.co/docs/reference/elasticsearch/)
 - [PostgreSQL documentation](https://www.postgresql.org/docs/current/)

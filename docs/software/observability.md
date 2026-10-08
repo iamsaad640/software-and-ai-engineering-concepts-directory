@@ -16,8 +16,8 @@
 - CPU profiles; heap profiles; lock profiles; flame graphs
 - Thread dumps; core dumps; query tracing; hypothesis testing
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [Google SRE books](https://sre.google/books/)

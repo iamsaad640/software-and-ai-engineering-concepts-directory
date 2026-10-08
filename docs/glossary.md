@@ -2,7 +2,7 @@
 
 [Directory](README.md) · [Repository home](../README.md)
 
-Exact display names are deduplicated here. Synonyms and related concepts can remain separate entries.
+Find a term and follow its links to the relevant categories.
 
 ## A
 

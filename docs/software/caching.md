@@ -15,9 +15,9 @@
 - Versioned keys; tenant-aware keys; cache poisoning
 - CDN; Vary; ETag; conditional requests; cache hit ratio
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web)
 - [Redis documentation](https://redis.io/docs/latest/)

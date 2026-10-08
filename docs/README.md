@@ -2,7 +2,7 @@
 
 [Repository home](../README.md) · [Alphabetical index](glossary.md)
 
-Concept names only. Categories overlap intentionally; this is a directory, not a claim that every role requires every term.
+Pick a topic to explore, or use the alphabetical index to find a specific term.
 
 ## Software engineering
 
@@ -32,7 +32,7 @@ Concept names only. Categories overlap intentionally; this is a directory, not a
 - [SaaS and business workflows](software/saas-workflows.md)
 - [Distributed key-value stores and Redis](software/distributed-key-value-stores.md)
 
-## Applied LLM engineering
+## LLM applications
 
 - [Model behavior and API integration](ai/model-integration.md)
 - [Prompt engineering](ai/prompt-engineering.md)
@@ -52,7 +52,7 @@ Concept names only. Categories overlap intentionally; this is a directory, not a
 - [LLM application UX](ai/application-ux.md)
 - [Multimodal application integration](ai/multimodal-applications.md)
 
-## Principal engineering
+## Architecture and technical leadership
 
 - [Technical strategy and architecture judgment](principal/technical-strategy.md)
 - [Organizational engineering](principal/organizational-engineering.md)

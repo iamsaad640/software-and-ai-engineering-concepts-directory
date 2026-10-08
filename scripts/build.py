@@ -8,7 +8,7 @@ from pathlib import Path
 import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
-TRACKS = {'software': 'Software engineering', 'ai': 'Applied LLM engineering', 'principal': 'Principal engineering'}
+TRACKS = {'software': 'Software engineering', 'ai': 'LLM applications', 'principal': 'Architecture and technical leadership'}
 
 def load():
     return json.loads((ROOT / 'catalog/directory.json').read_text())
@@ -19,7 +19,7 @@ def terms(section):
 def markdown_files(data):
     result = {}
     index = ['# Concepts directory', '', '[Repository home](../README.md) · [Alphabetical index](glossary.md)', '',
-             'Concept names only. Categories overlap intentionally; this is a directory, not a claim that every role requires every term.', '']
+             'Pick a topic to explore, or use the alphabetical index to find a specific term.', '']
     glossary = defaultdict(list)
     for track, title in TRACKS.items():
         index += [f'## {title}', '']
@@ -29,7 +29,7 @@ def markdown_files(data):
             lines = [f"# {section['title']}", '', '[Directory](../README.md) · [Alphabetical index](../glossary.md)', '', '## Concepts', '']
             for entry in section['entries']:
                 lines += [f"- {'; '.join(entry['terms'])}"]
-            lines += ['', '## Reference starting points', '', 'These are category resources, not evidence that every term is defined by a single source.', '']
+            lines += ['', '## Further reading', '', 'Reference links for this topic.', '']
             lines += [f'- [{name}]({url})' for name, url in section['references']]
             if section['slug'] == 'loop-engineering':
                 lines += ['', '> “Loop engineering” is an emerging umbrella term; the execution mechanisms listed here are the concrete study topics.']
@@ -39,7 +39,7 @@ def markdown_files(data):
         index += ['']
     result['docs/README.md'] = '\n'.join(index)
     lines = ['# Alphabetical concept index', '', '[Directory](README.md) · [Repository home](../README.md)', '',
-             'Exact display names are deduplicated here. Synonyms and related concepts can remain separate entries.', '']
+             'Find a term and follow its links to the relevant categories.', '']
     current = None
     for term in sorted(glossary, key=str.casefold):
         letter = term[0].upper() if term[0].isalpha() else '#'
@@ -67,14 +67,14 @@ def build_site(data):
     version=(ROOT/'VERSION').read_text().strip()
     document='''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="A searchable directory of software and applied LLM engineering concepts for senior and principal engineers.">
+<meta name="description" content="Find concepts for databases, distributed systems, architecture, RAG, prompts, and agents.">
 <title>Software &amp; AI Engineering Concepts</title><link rel="stylesheet" href="assets/style.css"><script defer src="assets/search.js"></script></head>
 <body><a class="skip" href="#main">Skip to concepts</a><header><a class="brand" href="./">Engineering concepts</a><a href="https://github.com/iamsaad640/software-and-ai-engineering-concepts-directory">GitHub</a></header>
-<div class="layout"><nav aria-label="Categories">NAV</nav><main id="main"><p class="eyebrow">Senior · Principal · Applied LLM engineering</p><h1>Software &amp; AI<br>Engineering Concepts</h1>
-<p class="intro">A directory of concept names across software systems, LLM applications, and technical leadership.</p><p class="meta">COUNT unique display names · CATEGORIES categories · vVERSION</p>
-<div class="search"><label for="search">Find a concept</label><input id="search" type="search" placeholder="Redis, sliding window, context engineering…" autocomplete="off"><label for="track">Track</label><select id="track"><option value="all">All tracks</option><option value="software">Software engineering</option><option value="ai">Applied LLM engineering</option><option value="principal">Principal engineering</option></select><button id="reset" type="button">Clear filters</button></div>
+<div class="layout"><nav aria-label="Categories">NAV</nav><main id="main"><p class="eyebrow">Software systems · LLM applications</p><h1>Software &amp; AI<br>Engineering Concepts</h1>
+<p class="intro">Find what to study next. Browse software systems, LLM applications, and architecture—or search for a specific concept.</p><p class="meta">COUNT distinct terms · CATEGORIES categories · vVERSION</p>
+<div class="search"><label for="search">Find a concept</label><input id="search" type="search" placeholder="Redis, sliding window, context engineering…" autocomplete="off"><label for="track">Topic</label><select id="track"><option value="all">All topics</option><option value="software">Software engineering</option><option value="ai">LLM applications</option><option value="principal">Architecture and leadership</option></select><button id="reset" type="button">Clear filters</button></div>
 <p id="status" role="status" aria-live="polite"></p><p id="empty" hidden>No matching concepts. Try another term or clear the filters.</p>
-CONTENT<footer>Names-only directory · <a href="catalog.json">Download catalog</a> · <a href="https://github.com/iamsaad640/software-and-ai-engineering-concepts-directory/blob/main/CONTRIBUTING.md">Contribute</a></footer></main></div></body></html>'''
+CONTENT<footer><a href="catalog.json">Download concept list</a> · <a href="https://github.com/iamsaad640/software-and-ai-engineering-concepts-directory/blob/main/CONTRIBUTING.md">Contribute</a></footer></main></div></body></html>'''
     document=document.replace('NAV',''.join(nav)).replace('CONTENT',''.join(sections)).replace('COUNT',f'{unique:,}').replace('CATEGORIES',str(len(data))).replace('VERSION',version)
     (out/'index.html').write_text(document)
     (out/'catalog.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')

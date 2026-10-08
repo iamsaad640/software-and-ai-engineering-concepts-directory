@@ -14,8 +14,8 @@
 - Failed-ingestion recovery; dead-letter ingestion; backfills
 - Freshness; expiration; deletion propagation; data lineage
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [OpenAI agent engineering resources](https://developers.openai.com/learn/agents)

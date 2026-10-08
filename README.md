@@ -1,48 +1,43 @@
-# Software & AI Engineering Concepts Directory
+# Software & AI Engineering Concepts
 
-A directory of advanced software and applied LLM engineering concepts for senior and principal engineers.
+Find the concepts behind reliable software and LLM applications.
 
-**Start here:** [Browse categories](docs/README.md) · [Alphabetical index](docs/glossary.md) · [Contribute](CONTRIBUTING.md)
+Browse **45 categories** covering databases, distributed systems, architecture, prompts, RAG, agent loops, and technical leadership. Use the directory to spot gaps in your knowledge, prepare for interviews, or plan what to study next.
 
-## Scope
+**[Browse the directory](docs/README.md)** · **[Find a term A–Z](docs/glossary.md)**
 
-- **Software engineering:** algorithms, runtimes, concurrency, architecture, APIs, databases, distributed systems, Redis, security, delivery, and operations.
-- **Applied LLM engineering:** prompts, context, knowledge bases, RAG, tools, MCP, agent loops, orchestration, memory, evaluations, and production applications.
-- **Principal engineering:** technical strategy, organizational engineering, and applied AI judgment.
+## Pick a starting point
 
-The first release lists concept names. It does not include concept explanations, tutorials, classical machine learning, or model training. Inclusion is a study prompt, not a claim that every role requires every specialization. Emerging umbrella terms such as “loop engineering” are distinguished from established mechanisms.
-
-## Browse
-
-| Track | Directory |
+| What you’re working on | Start here |
 | --- | --- |
-| Software engineering | [Software categories](docs/README.md#software-engineering) |
-| Applied LLM engineering | [LLM application categories](docs/README.md#applied-llm-engineering) |
-| Principal engineering | [Strategy and leadership](docs/README.md#principal-engineering) |
-| All concepts | [Alphabetical index](docs/glossary.md) |
+| APIs under heavy traffic | [Rate limiting](docs/software/rate-limiting.md), [caching](docs/software/caching.md), [performance](docs/software/performance.md) |
+| Data that stays correct | [Transactions](docs/software/transactions.md), [distributed systems](docs/software/distributed-systems.md), [Redis and distributed KV stores](docs/software/distributed-key-value-stores.md) |
+| LLMs that use your knowledge base | [Knowledge bases](docs/ai/knowledge-bases.md), [retrieval and RAG](docs/ai/rag-and-retrieval.md), [context engineering](docs/ai/context-engineering.md) |
+| Agents that take actions | [Tools and MCP](docs/ai/tools-and-mcp.md), [agent loops](docs/ai/loop-engineering.md), [action safety](docs/ai/action-safety.md) |
+| AI applications in production | [Evaluation](docs/ai/evaluation.md), [observability](docs/ai/observability.md), [security](docs/ai/security.md) |
+| Architecture and team decisions | [Technical strategy](docs/principal/technical-strategy.md), [organizational engineering](docs/principal/organizational-engineering.md) |
 
-The static documentation includes text search, track filtering, category navigation, and a downloadable catalog. Its intended GitHub Pages address is `https://iamsaad640.github.io/software-and-ai-engineering-concepts-directory/`; publication depends on Pages being enabled for the repository.
+## What’s inside
 
-## Maintain the directory
+- **Software engineering:** fundamentals, system design, storage, networking, security, testing, and operations.
+- **LLM applications:** prompts, context, retrieval, tools, memory, orchestration, and evaluations.
+- **Architecture and technical leadership:** tradeoffs, ownership, migrations, and engineering strategy.
 
-`catalog/directory.json` is the source of truth. Markdown and static documentation are generated from the same catalog.
+The directory currently lists concept names, with reference links for each category. Choose a topic relevant to your work and use its terms as a study checklist. The AI section focuses on building applications with LLMs.
+
+## Suggest a missing concept
+
+Found a gap or a confusing name? [Open an issue](https://github.com/iamsaad640/software-and-ai-engineering-concepts-directory/issues/new/choose) or [send a pull request](CONTRIBUTING.md).
+
+## Run the searchable docs locally
+
+Requires Python 3.11 or newer, with no extra packages.
 
 ```bash
 python3 scripts/build.py --site
-python3 scripts/check.py
 python3 -m http.server 8000 --directory _site
 ```
 
-Open `http://localhost:8000`. Python 3.11 or newer is sufficient; the build has no third-party dependencies.
+Open `http://localhost:8000` to search concepts and filter by topic. See [the contribution guide](CONTRIBUTING.md) for validation commands and [the maintenance guide](docs/maintaining.md) for publishing.
 
-Do not edit generated category pages or the alphabetical index directly. See [contribution guidance](CONTRIBUTING.md), [editorial style](STYLE_GUIDE.md), and [repository lifecycle](docs/maintaining.md).
-
-## Releases
-
-[Changelog](CHANGELOG.md) · [Release history](https://github.com/iamsaad640/software-and-ai-engineering-concepts-directory/releases)
-
-The release workflow uses `VERSION`, creates an annotated `vMAJOR.MINOR.PATCH` tag, and publishes the catalog and static site archive. Existing tags are never moved. The Pages workflow publishes validated content from `main` independently of release creation.
-
-## License
-
-[MIT](LICENSE). Third-party reference resources retain their own licenses.
+[Changelog](CHANGELOG.md) · [Releases](https://github.com/iamsaad640/software-and-ai-engineering-concepts-directory/releases) · [MIT license](LICENSE)

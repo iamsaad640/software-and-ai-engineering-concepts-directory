@@ -15,8 +15,8 @@
 - Data contracts; schema evolution; lineage; catalogs
 - Freshness; completeness; reconciliation; backfills; incremental processing
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [Apache Flink documentation](https://nightlies.apache.org/flink/flink-docs-stable/)

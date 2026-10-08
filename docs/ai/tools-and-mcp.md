@@ -16,9 +16,9 @@
 - MCP tools; MCP resources; MCP prompts; capability negotiation
 - MCP transports; session lifecycle; protocol versioning; MCP authorization
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [OpenAI agent engineering resources](https://developers.openai.com/learn/agents)
 - [MCP specification](https://modelcontextprotocol.io/specification/)

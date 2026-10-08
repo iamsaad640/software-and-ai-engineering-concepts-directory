@@ -13,8 +13,8 @@
 - Sensitive-data redaction; access-controlled telemetry
 - Prompt failures; context failures; retrieval failures; model failures; application failures
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [OpenAI agent engineering resources](https://developers.openai.com/learn/agents)

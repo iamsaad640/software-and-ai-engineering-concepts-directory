@@ -17,9 +17,9 @@
 - Redis locks; lease expiry; fencing tokens; Redlock; lock safety assumptions
 - Linearizable KV reads; compare-and-swap; watches; leases; consensus-backed coordination
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [Redis documentation](https://redis.io/docs/latest/)
 - [etcd documentation](https://etcd.io/docs/)

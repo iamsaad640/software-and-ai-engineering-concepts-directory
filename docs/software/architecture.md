@@ -15,8 +15,8 @@
 - ADRs; RFCs; architecture fitness functions
 - Strangler migration; branch by abstraction; evolutionary architecture
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [Martin Fowler architecture articles](https://martinfowler.com/architecture/)

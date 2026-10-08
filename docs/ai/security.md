@@ -14,9 +14,9 @@
 - Approval bypass; tool supply chain; connector permissions
 - Jailbreaks; adversarial evaluation; policy enforcement
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)
 - [OWASP GenAI security project](https://genai.owasp.org/)

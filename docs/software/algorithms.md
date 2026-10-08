@@ -17,8 +17,8 @@
 - Bloom filters; Count-Min Sketch; HyperLogLog; reservoir sampling
 - Consistent hashing; rendezvous hashing; sorting stability
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [Open Data Structures](https://opendatastructures.org/)

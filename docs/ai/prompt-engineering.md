@@ -15,8 +15,8 @@
 - Conflicting instructions; overconstraint; prompt brittleness; underspecification
 - Prompt optimization; evaluation flywheel; measured outcomes
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [OpenAI agent engineering resources](https://developers.openai.com/learn/agents)

@@ -13,9 +13,9 @@
 - Migration sequencing; dependency management; technical debt prioritization
 - Operability; maintainability; architecture governance
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [Google SRE books](https://sre.google/books/)
 - [GitHub documentation](https://docs.github.com/)
