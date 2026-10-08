@@ -4,6 +4,7 @@ import argparse
 from collections import defaultdict
 from html import escape
 import json
+import re
 from pathlib import Path
 import shutil
 
@@ -49,6 +50,18 @@ def markdown_files(data):
         links = ', '.join(f'[{title}]({target})' for title,target in glossary[term])
         lines += [f'- **{term}** — {links}']
     result['docs/glossary.md'] = '\n'.join(lines) + '\n'
+    overview = []
+    for track, title in TRACKS.items():
+        topics = [section for section in data if section['track'] == track]
+        overview += ['<details>', f'<summary>Read more: {title} ({len(topics)} topics)</summary>', '']
+        overview += [f"- [{section['title']}](docs/{track}/{section['slug']}.md)" for section in topics]
+        overview += ['', '</details>', '']
+    readme = (ROOT / 'README.md').read_text()
+    pattern = r'<!-- directory:start -->.*?<!-- directory:end -->'
+    if len(re.findall(pattern, readme, flags=re.S)) != 1:
+        raise ValueError('README must have exactly one directory block')
+    block = '<!-- directory:start -->\n\n' + '\n'.join(overview) + '<!-- directory:end -->'
+    result['README.md'] = re.sub(pattern, lambda match: block, readme, flags=re.S)
     return result
 
 def build_site(data):

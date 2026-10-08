@@ -2,6 +2,17 @@
 
 Notable directory changes are recorded here. Version numbers follow semantic versioning as documented in [the maintenance guide](docs/maintaining.md).
 
+## [0.1.2] — 2026-10-08
+
+### Added
+
+- Complete topic navigation in expandable README sections.
+- Generated README topic links kept in sync with the catalog.
+
+### Changed
+
+- Removed local documentation setup instructions from the README.
+
 ## [0.1.1] — 2026-10-08
 
 ### Changed
