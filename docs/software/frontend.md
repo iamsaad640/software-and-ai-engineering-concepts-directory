@@ -17,8 +17,8 @@
 - Offline synchronization; responsive design; design systems
 - CSP; internationalization; localization; timezones
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web)

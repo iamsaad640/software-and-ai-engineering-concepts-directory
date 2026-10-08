@@ -14,8 +14,8 @@
 - Tenant isolation; user isolation; memory poisoning
 - Summaries; original evidence; cross-session consistency
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [OpenAI agent engineering resources](https://developers.openai.com/learn/agents)

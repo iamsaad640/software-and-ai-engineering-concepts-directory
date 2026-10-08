@@ -13,9 +13,9 @@
 - TOCTOU; optimistic concurrency; stale approvals
 - Auditability; action provenance; execution receipts
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [OpenAI agent engineering resources](https://developers.openai.com/learn/agents)
 - [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)

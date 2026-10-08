@@ -17,9 +17,9 @@
 - Replay; retention; schema registry; event versioning
 - Consumer lag; backpressure; queue growth; cancellation
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [Apache Kafka documentation](https://kafka.apache.org/documentation/)
 - [Google SRE books](https://sre.google/books/)

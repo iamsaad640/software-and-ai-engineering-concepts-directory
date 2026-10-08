@@ -13,8 +13,8 @@
 - Realtime sessions; transport selection; session recovery
 - Multimodal prompt injection; consent; media retention
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [OpenAI agent engineering resources](https://developers.openai.com/learn/agents)

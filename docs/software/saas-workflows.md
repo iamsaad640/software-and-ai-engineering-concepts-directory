@@ -16,9 +16,9 @@
 - Data export; deletion; retention
 - Tenant configuration; SSO; provisioning; noisy-neighbor protection
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)
 - [PostgreSQL documentation](https://www.postgresql.org/docs/current/)

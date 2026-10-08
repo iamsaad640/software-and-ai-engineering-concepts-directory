@@ -16,9 +16,9 @@
 - Configuration management; secret injection; environment parity
 - FinOps; egress costs; resource tagging
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [Kubernetes concepts](https://kubernetes.io/docs/concepts/)
 - [Google SRE books](https://sre.google/books/)

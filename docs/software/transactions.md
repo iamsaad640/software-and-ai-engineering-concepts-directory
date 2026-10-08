@@ -15,8 +15,8 @@
 - Compare-and-set; transaction retries; retry-safe operations
 - WAL; crash recovery; two-phase locking; two-phase commit
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [PostgreSQL documentation](https://www.postgresql.org/docs/current/)

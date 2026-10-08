@@ -13,9 +13,9 @@
 - Session continuity; undo; correction
 - Accessibility; human handoff; trust calibration
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [OpenAI agent engineering resources](https://developers.openai.com/learn/agents)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web)

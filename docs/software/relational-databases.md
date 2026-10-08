@@ -15,8 +15,8 @@
 - Partitioning; materialized views; generated columns
 - Vacuum; table bloat; index bloat; online migrations; backfills
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [PostgreSQL documentation](https://www.postgresql.org/docs/current/)

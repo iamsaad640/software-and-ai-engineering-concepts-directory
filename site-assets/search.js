@@ -20,7 +20,7 @@ function filter() {
     if (matches) visibleCategories++;
     count += matches;
   }
-  status.textContent = `${count.toLocaleString()} concept listings in ${visibleCategories} categories`;
+  status.textContent = `${count.toLocaleString()} matches across ${visibleCategories} categories`;
   document.querySelector('#empty').hidden = count !== 0;
   for (const link of document.querySelectorAll('nav a')) {
     link.parentElement.hidden = document.querySelector(link.getAttribute('href')).hidden;

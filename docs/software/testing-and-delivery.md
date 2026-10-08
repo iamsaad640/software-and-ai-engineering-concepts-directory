@@ -16,9 +16,9 @@
 - Trunk-based development; GitHub flow; release gates
 - Supply-chain security; release observability
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [GitHub documentation](https://docs.github.com/)
 - [Google SRE books](https://sre.google/books/)

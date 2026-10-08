@@ -15,9 +15,9 @@
 - Clock skew; TTL; hot keys; fail-open; fail-closed
 - HTTP 429; Retry-After; load shedding; adaptive concurrency
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [Redis rate limiter pattern](https://redis.io/docs/latest/commands/incr/)
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web)

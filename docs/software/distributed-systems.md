@@ -19,8 +19,8 @@
 - Anti-entropy; read repair; hinted handoff; gossip
 - Consistent hashing; virtual nodes; hot partitions; Byzantine faults
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [Google SRE books](https://sre.google/books/)

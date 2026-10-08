@@ -15,8 +15,8 @@
 - Namespaces; cgroups; resource limits; OOM termination
 - Wall clocks; monotonic clocks; clock drift; clock precision
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [Linux manual pages](https://man7.org/linux/man-pages/)

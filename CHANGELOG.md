@@ -2,6 +2,15 @@
 
 Notable directory changes are recorded here. Version numbers follow semantic versioning as documented in [the maintenance guide](docs/maintaining.md).
 
+## [0.1.1] — 2026-10-08
+
+### Changed
+
+- Clearer introduction and topic-based starting points in the README.
+- Simpler navigation, search labels, and documentation copy.
+- Moved release and publishing details out of the reader introduction.
+- Updated pinned GitHub Actions to current releases.
+
 ## [0.1.0] — 2026-10-08
 
 ### Added

@@ -16,8 +16,8 @@
 - Vertical scaling; horizontal scaling; autoscaling lag; headroom
 - Cost per request; cost per tenant; capacity forecasts
 
-## Reference starting points
+## Further reading
 
-These are category resources, not evidence that every term is defined by a single source.
+Reference links for this topic.
 
 - [Google SRE books](https://sre.google/books/)
