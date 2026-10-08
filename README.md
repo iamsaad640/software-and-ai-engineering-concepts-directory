@@ -17,6 +17,74 @@ Browse **45 categories** covering databases, distributed systems, architecture, 
 | AI applications in production | [Evaluation](docs/ai/evaluation.md), [observability](docs/ai/observability.md), [security](docs/ai/security.md) |
 | Architecture and team decisions | [Technical strategy](docs/principal/technical-strategy.md), [organizational engineering](docs/principal/organizational-engineering.md) |
 
+## Explore all topics
+
+<!-- directory:start -->
+
+<details>
+<summary>Read more: Software engineering (25 topics)</summary>
+
+- [Algorithms and data structures](docs/software/algorithms.md)
+- [Languages and runtimes](docs/software/languages-and-runtimes.md)
+- [Operating systems and hardware](docs/software/operating-systems.md)
+- [Concurrency and parallelism](docs/software/concurrency.md)
+- [Networking and protocols](docs/software/networking.md)
+- [Code design and maintainability](docs/software/code-design.md)
+- [Architecture and domain modeling](docs/software/architecture.md)
+- [APIs and integrations](docs/software/api-design.md)
+- [Rate limiting and admission control](docs/software/rate-limiting.md)
+- [Caching](docs/software/caching.md)
+- [Relational databases and SQL](docs/software/relational-databases.md)
+- [Transactions and concurrency control](docs/software/transactions.md)
+- [Nonrelational databases and search](docs/software/nonrelational-and-search.md)
+- [Distributed systems](docs/software/distributed-systems.md)
+- [Messaging and durable workflows](docs/software/messaging.md)
+- [Data engineering](docs/software/data-engineering.md)
+- [Reliability and resilience](docs/software/reliability.md)
+- [Observability and debugging](docs/software/observability.md)
+- [Performance and capacity](docs/software/performance.md)
+- [Security and privacy](docs/software/security.md)
+- [Infrastructure and cloud](docs/software/infrastructure.md)
+- [Testing and delivery](docs/software/testing-and-delivery.md)
+- [Frontend and client engineering](docs/software/frontend.md)
+- [SaaS and business workflows](docs/software/saas-workflows.md)
+- [Distributed key-value stores and Redis](docs/software/distributed-key-value-stores.md)
+
+</details>
+
+<details>
+<summary>Read more: LLM applications (17 topics)</summary>
+
+- [Model behavior and API integration](docs/ai/model-integration.md)
+- [Prompt engineering](docs/ai/prompt-engineering.md)
+- [Context engineering](docs/ai/context-engineering.md)
+- [Knowledge-base ingestion](docs/ai/knowledge-bases.md)
+- [Retrieval and RAG](docs/ai/rag-and-retrieval.md)
+- [Tools, function calling, and MCP](docs/ai/tools-and-mcp.md)
+- [Agent loop engineering](docs/ai/loop-engineering.md)
+- [Agent harness and orchestration](docs/ai/harness-and-orchestration.md)
+- [Memory engineering](docs/ai/memory-engineering.md)
+- [Planning, reasoning, and verification](docs/ai/planning-and-verification.md)
+- [Actions and side-effect safety](docs/ai/action-safety.md)
+- [Evaluation engineering](docs/ai/evaluation.md)
+- [LLM observability and debugging](docs/ai/observability.md)
+- [LLM application security](docs/ai/security.md)
+- [LLM performance and cost](docs/ai/performance-and-cost.md)
+- [LLM application UX](docs/ai/application-ux.md)
+- [Multimodal application integration](docs/ai/multimodal-applications.md)
+
+</details>
+
+<details>
+<summary>Read more: Architecture and technical leadership (3 topics)</summary>
+
+- [Technical strategy and architecture judgment](docs/principal/technical-strategy.md)
+- [Organizational engineering](docs/principal/organizational-engineering.md)
+- [Principal-level applied AI judgment](docs/principal/applied-ai-strategy.md)
+
+</details>
+<!-- directory:end -->
+
 ## What’s inside
 
 - **Software engineering:** fundamentals, system design, storage, networking, security, testing, and operations.
