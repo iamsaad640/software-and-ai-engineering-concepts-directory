@@ -2,6 +2,12 @@
 
 Notable directory changes are recorded here. Version numbers follow semantic versioning as documented in [the maintenance guide](docs/maintaining.md).
 
+## [0.2.3] — 2026-10-08
+
+### Fixed
+
+- Fingerprinted custom JavaScript and CSS filenames prevent browsers from retaining stale assets after releases.
+
 ## [0.2.2] — 2026-10-08
 
 ### Fixed

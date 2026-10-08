@@ -3,6 +3,7 @@
 import argparse
 from collections import defaultdict
 from html import escape
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -119,6 +120,15 @@ Created and maintained by [Saad Ahmed](https://github.com/iamsaad640). [Suggest 
 ''')
     shutil.copytree(ROOT/'site-assets', staging/'assets', dirs_exist_ok=True)
     config = yaml.safe_load((ROOT/'mkdocs.yml').read_text())
+    for key in ('extra_javascript', 'extra_css'):
+        fingerprinted = []
+        for asset in config.get(key, []):
+            source = staging / asset
+            digest = hashlib.sha256(source.read_bytes()).hexdigest()[:12]
+            target = source.with_name(f'{source.stem}.{digest}{source.suffix}')
+            shutil.copy2(source, target)
+            fingerprinted.append(target.relative_to(staging).as_posix())
+        config[key] = fingerprinted
     config['nav'] = [{'Home': 'index.md'}, {'All topics': 'topics.md'}]
     for track, title in TRACKS.items():
         config['nav'].append({title: [{section['title']: f"{track}/{section['slug']}.md"} for section in data if section['track'] == track]})
