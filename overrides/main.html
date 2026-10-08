@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block extrahead %}
+  {{ super() }}
+  <link rel="describedby" href="{{ 'llms.txt' | url }}" type="text/markdown">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title | e }} | {{ config.site_name | e }}">
+  <meta property="og:description" content="{{ config.site_description | e }}">
+  <meta property="og:url" content="{{ page.canonical_url | e }}">
+  <meta name="twitter:card" content="summary">
+{% endblock %}

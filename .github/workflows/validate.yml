@@ -17,7 +17,13 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+      - name: Install documentation dependencies
+        run: |
+          python3 -m venv .venv
+          .venv/bin/python -m pip install -r requirements-docs.txt
       - name: Validate catalog, generated Markdown, and site
-        run: python3 scripts/check.py
+        run: .venv/bin/python scripts/check.py
       - name: Check search JavaScript syntax
-        run: node --check site-assets/search.js
+        run: node --check site-assets/shortcuts.js
+      - name: Test merged-branch cleanup rules
+        run: python3 -m unittest discover -s tests

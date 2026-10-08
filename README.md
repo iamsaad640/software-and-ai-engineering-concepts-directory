@@ -4,7 +4,7 @@ Find the concepts behind reliable software and LLM applications.
 
 Browse **45 categories** covering databases, distributed systems, architecture, prompts, RAG, agent loops, and technical leadership. Use the directory to spot gaps in your knowledge, prepare for interviews, or plan what to study next.
 
-**[Browse the directory](docs/README.md)** · **[Find a term A–Z](docs/glossary.md)**
+**[Open concepts.saad.run](https://concepts.saad.run/)** · **[Browse on GitHub](docs/README.md)** · **[Find a term A–Z](docs/glossary.md)**
 
 ## Pick a starting point
 
@@ -92,6 +92,12 @@ Browse **45 categories** covering databases, distributed systems, architecture, 
 - **Architecture and technical leadership:** tradeoffs, ownership, migrations, and engineering strategy.
 
 The directory currently lists concept names, with reference links for each category. Choose a topic relevant to your work and use its terms as a study checklist. The AI section focuses on building applications with LLMs.
+
+## About
+
+Created and maintained by [Saad Ahmed](https://github.com/iamsaad640). The directory covers software systems and building applications with LLMs.
+
+[AI-readable index](https://concepts.saad.run/llms.txt) · [Download the concept list](https://concepts.saad.run/concepts.txt)
 
 ## Suggest a missing concept
 

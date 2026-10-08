@@ -1,0 +1,49 @@
+site_name: Software & AI Engineering Concepts
+site_url: https://concepts.saad.run/
+site_author: Saad Ahmed
+site_description: Concepts for software systems, LLM applications, and technical leadership.
+repo_url: https://github.com/iamsaad640/software-and-ai-engineering-concepts-directory
+repo_name: GitHub
+edit_uri: ''
+docs_dir: _docs
+site_dir: _site
+use_directory_urls: true
+copyright: Created and maintained by <a href="https://github.com/iamsaad640">Saad Ahmed</a> · MIT license
+theme:
+  name: material
+  custom_dir: overrides
+  font: false
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - toc.follow
+plugins:
+  - search
+markdown_extensions:
+  - attr_list
+  - toc:
+      permalink: true
+extra_javascript:
+  - assets/shortcuts.js
+extra_css:
+  - assets/theme.css
