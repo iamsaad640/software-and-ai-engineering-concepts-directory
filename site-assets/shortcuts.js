@@ -5,6 +5,6 @@ document.addEventListener('keydown', (event) => {
   const query = document.querySelector('[data-md-component="search-query"]');
   if (!toggle || !query) return;
   event.preventDefault();
-  toggle.checked = true;
+  if (!toggle.checked) toggle.click();
   query.focus();
 });

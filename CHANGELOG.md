@@ -2,6 +2,13 @@
 
 Notable directory changes are recorded here. Version numbers follow semantic versioning as documented in [the maintenance guide](docs/maintaining.md).
 
+## [0.2.2] — 2026-10-08
+
+### Fixed
+
+- Keyboard search now uses the theme toggle events so results remain visible and accessible.
+- Replaced the small raster header logo with a crisp, high-contrast book icon.
+
 ## [0.2.1] — 2026-10-08
 
 ### Added
