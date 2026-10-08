@@ -97,15 +97,4 @@ The directory currently lists concept names, with reference links for each categ
 
 Found a gap or a confusing name? [Open an issue](https://github.com/iamsaad640/software-and-ai-engineering-concepts-directory/issues/new/choose) or [send a pull request](CONTRIBUTING.md).
 
-## Run the searchable docs locally
-
-Requires Python 3.11 or newer, with no extra packages.
-
-```bash
-python3 scripts/build.py --site
-python3 -m http.server 8000 --directory _site
-```
-
-Open `http://localhost:8000` to search concepts and filter by topic. See [the contribution guide](CONTRIBUTING.md) for validation commands and [the maintenance guide](docs/maintaining.md) for publishing.
-
 [Changelog](CHANGELOG.md) · [Releases](https://github.com/iamsaad640/software-and-ai-engineering-concepts-directory/releases) · [MIT license](LICENSE)
